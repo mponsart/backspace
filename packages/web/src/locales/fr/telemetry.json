@@ -1,0 +1,46 @@
+{
+  "ask": {
+    "title": "Salut. Moi, c'est Jannis. C'est moi qui ai construit ça.",
+    "p1": "Backspace ne piste personne, moi y compris. Aucun chiffre, aucun tableau de bord, rien. Je vois le compteur de téléchargements, et puis plus rien. Construire ça, c'est un peu comme crier dans le vide sans jamais entendre de réponse.",
+    "p2": "Alors je vous le demande. Une fois par jour, votre instance accepterait-elle de m'envoyer un tout petit bonjour ? Pas qui vous êtes, pas ce que quelqu'un a dit. Juste des chiffres arrondis : combien de personnes sont là, quelle version tourne, si le vocal et la fédération sont activés, et de quel pays vient le bonjour. Aucun nom, aucun message, aucune adresse d'aucune sorte.",
+    "previewLead": "Voici exactement ce que le message dirait aujourd'hui :",
+    "previewToggleShow": "Afficher le message",
+    "previewToggleHide": "Masquer le message",
+    "previewLoading": "Préparation du message",
+    "previewError": "Le message n'a pas pu être préparé pour le moment. Rien n'a été envoyé, et vous pouvez toujours décider dans un sens comme dans l'autre.",
+    "p3": "Tout ce qui revient est publié en données ouvertes sur la page de statistiques du projet, et les graphiques apparaissent dès que dix instances au moins disent bonjour. Cette option reste désactivée tant que vous n'avez pas dit oui, et vous pouvez la désactiver à tout moment.",
+    "yes": "Coucou 👋",
+    "no": "Silence radio",
+    "later": "Décider plus tard",
+    "footnote": "Le récepteur tourne sur Cloudflare, qui voit la requête comme n'importe quel hébergeur web et en déduit le pays. Rien d'autre à votre sujet n'est stocké. Vous pouvez changer cela à tout moment dans les paramètres de l'instance.",
+    "saving": "Enregistrement de votre choix",
+    "error": "Votre choix n'a pas pu être enregistré. Rien n'a été envoyé. Veuillez réessayer."
+  },
+  "yes": {
+    "title": "Signal reçu.",
+    "body": "Le premier bonjour part à une minute aléatoire, puis chaque jour. Merci. C'est beaucoup moins silencieux ici maintenant.",
+    "close": "Fermer"
+  },
+  "no": {
+    "title": "Compris.",
+    "body": "Rien ne sera envoyé. Je poursuis ma route, et si vous changez d'avis, je suis à un interrupteur de distance dans les paramètres de l'instance.",
+    "close": "Fermer"
+  },
+  "panel": {
+    "title": "Dire bonjour à Jannis",
+    "intro": "Un rapport d'utilisation quotidien facultatif envoyé au mainteneur : des chiffres arrondis et la version, rien sur les personnes. Désactivé tant que vous ne l'activez pas.",
+    "toggle": "Envoyer un bonjour quotidien",
+    "status": {
+      "never": "Jamais proposé",
+      "off": "Désactivé",
+      "on": "Activé",
+      "lastDay": "Dernier bonjour envoyé le {{date}}",
+      "none": "Aucun bonjour envoyé pour l'instant",
+      "error": "La dernière tentative du {{date}} a échoué avec le statut {{status}}. Une nouvelle tentative aura lieu demain.",
+      "id": "Identifiant de l'instance (aléatoire, différent de votre domaine) : {{id}}"
+    },
+    "previewTitle": "Ce qui serait envoyé aujourd'hui",
+    "learnMore": "Ce qui est envoyé et pourquoi",
+    "refreshPreview": "Actualiser"
+  }
+}

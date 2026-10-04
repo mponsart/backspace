@@ -1,0 +1,155 @@
+{
+  "message": {
+    "edit": {
+      "hint": "Échap pour <cancel>annuler</cancel> • Entrée pour <save>enregistrer</save>"
+    },
+    "edited": "(modifié)",
+    "gifAlt": "GIF",
+    "upload": {
+      "failed": "Échec du téléversement",
+      "discard": "Abandonner"
+    },
+    "actions": {
+      "confirmDelete": "Confirmer la suppression"
+    },
+    "reply": {
+      "jump": "Aller au message d'origine"
+    },
+    "mention": {
+      "unknownUser": "Utilisateur inconnu"
+    },
+    "reactions": {
+      "you": "Vous",
+      "others_one": "{{count}} autre",
+      "others_many": "{{count}} d'autres",
+      "others_other": "{{count}} autres",
+      "bySelf": "Vous avez réagi",
+      "byOne": "{{name}} a réagi",
+      "byMany": "{{names}} ont réagi"
+    }
+  },
+  "list": {
+    "noHistoryPermission": "Vous n'avez pas la permission de consulter l'historique des messages de ce salon",
+    "loading": "Chargement des messages",
+    "loadingOlder": "Chargement des messages plus anciens",
+    "jumpToPresent": "Revenir au présent",
+    "jump": {
+      "unavailable": "Ce message n'est plus disponible",
+      "failed": "Impossible de charger ce message",
+      "presentFailed": "Impossible de charger les derniers messages"
+    },
+    "welcome": {
+      "channel": {
+        "title": "Bienvenue dans le salon !",
+        "description": "C'est le début de la conversation."
+      },
+      "group": {
+        "intro": "C'est le début de votre conversation de groupe.",
+        "owner": "Propriétaire : <owner>@{{name}}</owner>",
+        "federatedNotice": "Les messages sont stockés sur votre instance d'origine et sur celles de vos destinataires. Ils ne sont pas chiffrés de bout en bout.",
+        "openSettings": "Ouvrir les paramètres du groupe",
+        "leave": "Quitter le groupe"
+      },
+      "dm": {
+        "fallbackName": "Message privé",
+        "intro": "C'est le début de votre historique de messages privés avec <strong>@{{name}}</strong>.",
+        "federatedNotice": "Les messages sont stockés sur votre instance d'origine et sur celle de votre destinataire. Ils ne sont pas chiffrés de bout en bout.",
+        "removeFriend": "Retirer des amis"
+      }
+    }
+  },
+  "composer": {
+    "noPermission": "Vous n'avez pas la permission d'envoyer des messages dans ce salon",
+    "placeholder": {
+      "channel": "Envoyer un message dans #{{name}}",
+      "dm": "Envoyer un message à @{{name}}"
+    },
+    "replyingTo": "Réponse à",
+    "cancelReply": "Annuler la réponse",
+    "removeAttachment": "Retirer la pièce jointe",
+    "attachFile": "Joindre un fichier",
+    "uploading": "Téléversement…",
+    "uploadingLabel": "Téléversement",
+    "failedCount_one": "{{count}} échec",
+    "failedCount_many": "{{count}} d'échecs",
+    "failedCount_other": "{{count}} échecs",
+    "failedHint": "Retirez la pièce jointe en échec ou réessayez pour envoyer",
+    "gif": "GIF",
+    "gifPicker": "Sélecteur de GIF",
+    "emoji": "Émoji",
+    "emojiPicker": "Sélecteur d'émojis",
+    "send": "Envoyer",
+    "sendMessage": "Envoyer le message",
+    "uploadFailed": "Échec du téléversement de {{file}} : {{reason}}",
+    "uploadFailedReason": "Échec du téléversement",
+    "sendFailed": "Impossible d'envoyer le message",
+    "typing": {
+      "named_one": "{{names}} est en train d'écrire",
+      "named_many": "{{names}} sont en train d'écrire",
+      "named_other": "{{names}} sont en train d'écrire",
+      "several": "Plusieurs personnes sont en train d'écrire"
+    }
+  },
+  "menu": {
+    "saveImage": "Enregistrer l'image",
+    "copyImage": "Copier l'image",
+    "openOriginal": "Ouvrir l'original",
+    "saveVideo": "Enregistrer la vidéo",
+    "saveAudio": "Enregistrer l'audio",
+    "copyLink": "Copier le lien",
+    "openLink": "Ouvrir le lien",
+    "copySelectedText": "Copier le texte sélectionné",
+    "copyText": "Copier le texte",
+    "markUnread": "Marquer comme non lu",
+    "editMessage": "Modifier le message",
+    "deleteMessage": "Supprimer le message",
+    "linkCopied": "Lien copié",
+    "linkCopyFailed": "Impossible de copier le lien"
+  },
+  "attachment": {
+    "progress": {
+      "pausedTitle": "En pause — {{percent}}"
+    },
+    "video": {
+      "cannotPlayDownload": "Lecture impossible ici — télécharger",
+      "unsupportedFormat": "Format vidéo non pris en charge",
+      "unsupportedBrowser": "Votre navigateur ne prend pas en charge la lecture vidéo."
+    },
+    "audio": {
+      "unsupportedBrowser": "Votre navigateur ne prend pas en charge la lecture audio."
+    },
+    "federation": {
+      "remoteNamed": "Hébergé sur l'instance de {{sender}}. Téléchargez-le pour en garder une copie locale.",
+      "remoteUnknown": "Hébergé sur l'instance de l'expéditeur. Téléchargez-le pour en garder une copie locale.",
+      "partialGeneric": "Certains destinataires ne peuvent pas mettre ce fichier en cache localement.",
+      "partialInstance": "l'instance de {{username}} (limite : {{limit}})",
+      "partialList": "Le fichier n'a pas pu être mis en cache sur {{instances}}. Ces personnes peuvent toujours le consulter depuis la vôtre.",
+      "listPair": "{{first}} et {{second}}"
+    }
+  },
+  "gif": {
+    "searchPlaceholder": "Rechercher des GIF",
+    "noResults": "Aucun GIF trouvé",
+    "noTrending": "Aucun GIF tendance",
+    "attribution": "Propulsé par Klipy"
+  },
+  "preview": {
+    "save": "Enregistrer l'image",
+    "copy": "Copier l'image",
+    "alt": "Aperçu de l'image"
+  },
+  "invite": {
+    "sentBy": "{{name}} a envoyé une invitation",
+    "memberCount_one": "{{count}} membre",
+    "memberCount_many": "{{count}} de membres",
+    "memberCount_other": "{{count}} membres",
+    "revoked": "Invitation expirée",
+    "join": "Rejoindre",
+    "joining": "Connexion à l'espace…",
+    "joinFailed": "Impossible de rejoindre"
+  },
+  "notification": {
+    "unknownSender": "Quelqu'un",
+    "attachmentOnly": "A envoyé une pièce jointe"
+  }
+}

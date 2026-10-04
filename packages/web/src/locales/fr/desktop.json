@@ -1,0 +1,22 @@
+{
+  "update": {
+    "laterHint": "Vous pourrez l'installer plus tard depuis Paramètres, Bureau",
+    "dismiss": "Ignorer cette mise à jour",
+    "failed": {
+      "title": "Impossible d'installer la mise à jour",
+      "body": "Backspace {{version}} a été téléchargé, mais son installation a échoué. Vous pouvez l'installer manuellement."
+    },
+    "ready": {
+      "title": "Mise à jour prête",
+      "body": "Backspace {{version}} est téléchargé et prêt à être installé."
+    },
+    "available": {
+      "title": "Backspace {{version}} est disponible",
+      "body": "Cette version ne peut pas se mettre à jour elle-même : téléchargez la nouvelle version pour passer à la suivante.",
+      "bodyWithCurrent": "Vous utilisez la version {{currentVersion}}. Cette version ne peut pas se mettre à jour elle-même : téléchargez la nouvelle version pour passer à la suivante."
+    },
+    "restartNow": "Redémarrer maintenant",
+    "download": "Télécharger",
+    "later": "Plus tard"
+  }
+}

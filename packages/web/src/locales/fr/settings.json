@@ -1,0 +1,434 @@
+{
+  "interfaceScale": {
+    "label": "Échelle de l'interface",
+    "description": "Redimensionne le texte, les boutons et les panneaux. Enregistré dans ce navigateur ou cette application, sur cet appareil.",
+    "reset": "Revenir à 100 %"
+  },
+  "voice": {
+    "input": {
+      "title": "Périphérique d'entrée",
+      "checkingAccess": "Vérification de l'accès au microphone…",
+      "accessDenied": {
+        "title": "Accès au microphone refusé",
+        "description": "Autorisez l'accès au microphone pour choisir un périphérique d'entrée.",
+        "retry": "Réessayer"
+      },
+      "permissionPrompt": {
+        "description": "L'autorisation d'accès au microphone est nécessaire pour lister et choisir un périphérique d'entrée.",
+        "enable": "Activer l'accès au microphone"
+      },
+      "device": {
+        "systemDefault": "Par défaut du système",
+        "currentlyUsing": "Utilisé actuellement : {{label}}",
+        "none": "Aucun microphone détecté."
+      },
+      "volume": {
+        "label": "Volume d'entrée"
+      },
+      "meter": {
+        "hint": "L'indicateur de niveau s'active dès que vous rejoignez un salon vocal."
+      }
+    },
+    "output": {
+      "title": "Périphérique de sortie",
+      "checkingAccess": "Vérification de l'accès audio…",
+      "device": {
+        "systemDefault": "Par défaut du système",
+        "unsupported": "Ce navigateur ne permet pas de choisir un périphérique de sortie. L'audio est lu sur le périphérique par défaut du système."
+      },
+      "permissionPrompt": {
+        "description": "Autorisez l'accès au microphone pour lister les périphériques de sortie (les navigateurs conditionnent l'affichage de leurs noms à l'accès au microphone).",
+        "enable": "Activer l'accès audio"
+      },
+      "volume": {
+        "label": "Volume de sortie"
+      },
+      "testSound": "Jouer un son de test"
+    },
+    "video": {
+      "title": "Vidéo",
+      "checkingAccess": "Vérification de l'accès à la caméra…",
+      "accessDenied": {
+        "title": "Accès à la caméra refusé",
+        "description": "Autorisez l'accès à la caméra pour en choisir une.",
+        "retry": "Réessayer"
+      },
+      "blocked": {
+        "browser": "Caméra bloquée au niveau du navigateur. Cliquez sur l'icône de caméra dans la barre d'adresse de votre navigateur, réinitialisez l'autorisation, puis cliquez sur Réessayer.",
+        "mac": "Autorisez l'accès à la caméra dans Réglages Système → Confidentialité et sécurité → Caméra, puis redémarrez l'application.",
+        "windows": "Autorisez l'accès à la caméra dans Paramètres → Confidentialité et sécurité → Caméra, puis redémarrez l'application.",
+        "other": "L'autorisation d'accès à la caméra a été refusée. Réinitialisez-la dans la fenêtre d'autorisation de votre navigateur ou de Chromium, puis réessayez."
+      },
+      "permissionPrompt": {
+        "description": "L'autorisation d'accès à la caméra est nécessaire pour choisir une caméra et afficher un aperçu.",
+        "enable": "Activer l'aperçu de la caméra"
+      },
+      "camera": {
+        "label": "Caméra",
+        "auto": "Auto (par défaut du système)",
+        "fallbackName": "Caméra {{number}}",
+        "detectedFallback": "caméra détectée",
+        "currentlyUsing": "Utilisée actuellement : {{label}}",
+        "none": "Aucune caméra détectée."
+      },
+      "preview": {
+        "testAria": "Tester la caméra",
+        "testHint": "Cliquez pour tester la caméra",
+        "stop": "Arrêter l'aperçu",
+        "retry": "Réessayer"
+      },
+      "previewError": {
+        "inUse": "La caméra est utilisée par une autre application.",
+        "unavailable": "La caméra sélectionnée n'est pas disponible.",
+        "notFound": "Aucune caméra détectée.",
+        "generic": "Impossible de démarrer l'aperçu de la caméra."
+      }
+    },
+    "title": "Voix et vidéo",
+    "volume": {
+      "sectionTitle": "Volume",
+      "soundEffects": {
+        "label": "Volume des effets sonores"
+      },
+      "messageSound": {
+        "label": "Jouer un son pour chaque message",
+        "description": "Désactivé (par défaut) : uniquement les MP et les messages qui vous mentionnent. Activé : tous les salons."
+      }
+    },
+    "pip": {
+      "sectionTitle": "Fenêtre flottante",
+      "showOnSwitch": {
+        "label": "Afficher la fenêtre flottante pendant les appels",
+        "description": "Lorsque vous êtes dans un salon vocal ou en appel et que vous regardez autre chose, une petite fenêtre garde l'appel en vue."
+      }
+    },
+    "processing": {
+      "sectionTitle": "Traitement de la voix",
+      "noiseSuppression": {
+        "label": "Suppression de bruit par IA",
+        "description": "Suppression du bruit par apprentissage automatique (RNNoise). Filtre le clavier, les ventilateurs et les bruits de fond."
+      },
+      "echoCancellation": {
+        "label": "Annulation d'écho",
+        "description": "Supprime l'écho de vos haut-parleurs qui retourne dans le micro. Toujours activée pour les salons vocaux et les appels."
+      },
+      "autoGain": {
+        "label": "Contrôle automatique du gain",
+        "description": "Ajuste automatiquement le volume du micro. Peut atténuer la voix pendant les streams."
+      }
+    }
+  },
+  "nav": {
+    "userSettings": "Paramètres utilisateur",
+    "appSettings": "Paramètres de l'application",
+    "administration": "Administration",
+    "tabs": {
+      "account": "Compte",
+      "appearance": "Apparence",
+      "voice": "Voix et vidéo",
+      "privacy": "Confidentialité",
+      "connections": "Connexions",
+      "keybinds": "Raccourcis clavier",
+      "desktop": "Bureau",
+      "instance": "Instance"
+    },
+    "logOut": "Se déconnecter",
+    "backToMenu": "Retour au menu des paramètres"
+  },
+  "appearance": {
+    "title": "Apparence"
+  },
+  "account": {
+    "title": "Mon compte",
+    "detached": {
+      "notice": "Ce compte est détaché de son instance d'origine.",
+      "explanation": "{{homeInstance}} a été réinitialisée ou n'est plus disponible, ce compte fonctionne donc désormais localement sur cette instance. Votre profil et votre mot de passe sont gérés ici.",
+      "reattachHint": "En tant que {{username}} sur {{homeInstance}}, vous pouvez relier à nouveau ce compte. Le profil et la présence seront de nouveau synchronisés depuis cette instance.",
+      "reattachButton": "Rattacher à {{homeInstance}}",
+      "reattachConfirm": "Confirmer le rattachement en tant que {{username}}",
+      "reattaching": "Rattachement…",
+      "reattachFailed": "Échec du rattachement",
+      "reattached": "Compte relié à {{username}}"
+    },
+    "profile": {
+      "sectionTitle": "Personnalisation du profil",
+      "avatar": {
+        "label": "Avatar",
+        "alt": "Votre avatar",
+        "change": "Changer l'avatar",
+        "uploadFailed": "Impossible de téléverser l'avatar",
+        "cropTitle": "Recadrer l'avatar"
+      },
+      "banner": {
+        "label": "Bannière",
+        "change": "Changer la bannière",
+        "uploadFailed": "Impossible de téléverser la bannière",
+        "cropTitle": "Recadrer la bannière"
+      },
+      "avatarColor": {
+        "label": "Couleur de l'avatar"
+      },
+      "bannerColor": {
+        "label": "Couleur de la bannière",
+        "hexPlaceholder": "#hex"
+      },
+      "bio": {
+        "label": "À propos de moi",
+        "placeholder": "Parlez de vous au monde entier…",
+        "counter": "{{used}}/{{max}}"
+      }
+    },
+    "details": {
+      "sectionTitle": "Compte",
+      "status": {
+        "label": "Statut",
+        "homeUnavailable": "Votre statut est conservé sur {{host}}. Connectez-vous à {{host}} pour le modifier."
+      },
+      "customStatus": {
+        "label": "Statut personnalisé",
+        "placeholder": "Qu'êtes-vous en train de faire ?"
+      }
+    },
+    "password": {
+      "current": {
+        "label": "Mot de passe actuel",
+        "placeholder": "Saisissez le mot de passe actuel"
+      },
+      "new": {
+        "label": "Nouveau mot de passe",
+        "placeholder": "Au moins {{min}} caractères"
+      },
+      "confirm": {
+        "label": "Confirmer le nouveau mot de passe",
+        "placeholder": "Confirmez le nouveau mot de passe"
+      },
+      "show": "Afficher le mot de passe",
+      "hide": "Masquer le mot de passe",
+      "tooShort": "Le nouveau mot de passe doit contenir au moins {{min}} caractères",
+      "mismatch": "Les mots de passe ne correspondent pas",
+      "changed": "Mot de passe modifié",
+      "changeFailed": "Impossible de modifier le mot de passe",
+      "submit": "Modifier le mot de passe",
+      "submitting": "Modification…"
+    },
+    "danger": {
+      "description": "Une fois votre compte supprimé, il n'y a plus de retour en arrière possible. Vos messages seront conservés mais attribués à « Utilisateur supprimé ».",
+      "deleteButton": "Supprimer le compte"
+    },
+    "save": {
+      "updated": "Profil mis à jour",
+      "failed": "Impossible de mettre à jour le profil"
+    },
+    "deletion": {
+      "title": "Supprimer le compte",
+      "warning": {
+        "headline": "Cela supprimera définitivement votre compte.",
+        "spaces": "Toutes vos adhésions à des espaces seront supprimées",
+        "friends": "Toutes vos relations d'amitié seront supprimées",
+        "dms": "Toutes vos appartenances à des MP seront supprimées",
+        "messages": "Vos messages seront conservés mais attribués à « Utilisateur supprimé »"
+      },
+      "ownedSpaces": {
+        "prompt_one": "Vous possédez {{count}} espace. Traitez-le avant de continuer :",
+        "prompt_many": "Vous possédez {{count}} d'espaces. Traitez-les un par un avant de continuer :",
+        "prompt_other": "Vous possédez {{count}} espaces. Traitez-les un par un avant de continuer :",
+        "transfer": "Transférer",
+        "delete": "Supprimer l'espace",
+        "selectOwner": "Sélectionner un nouveau propriétaire…"
+      },
+      "processing": "Traitement en cours…",
+      "confirm": {
+        "permanent": "Cette action est définitive et irréversible.",
+        "usernamePrompt": "Saisissez votre nom d'utilisateur <username>{{username}}</username> pour confirmer",
+        "passwordPlaceholder": "Saisissez votre mot de passe",
+        "submit": "Supprimer mon compte",
+        "deleting": "Suppression…"
+      },
+      "federation": {
+        "removing": "Suppression de votre compte des instances connectées…",
+        "deleteAnyway": "Supprimer le compte maintenant"
+      },
+      "complete": {
+        "title": "Compte supprimé",
+        "redirecting": "Redirection vers la connexion…"
+      },
+      "errors": {
+        "usernameMismatch": "Le nom d'utilisateur ne correspond pas",
+        "spacesFailed": "Impossible de traiter les espaces",
+        "deleteFailed": "Impossible de supprimer le compte"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "discovery": {
+      "sectionTitle": "Découverte",
+      "label": "Permettre aux autres de trouver mon profil",
+      "description": "Lorsque cette option est activée, votre profil apparaît dans Découvrir des personnes. Les autres peuvent toujours vous ajouter avec votre nom d'utilisateur exact."
+    },
+    "activity": {
+      "sectionTitle": "Statut d'activité",
+      "label": "Partager le statut d'activité",
+      "description": "Permettre aux autres de voir ce que vous faites, comme les jeux auxquels vous jouez ou la musique que vous écoutez."
+    }
+  },
+  "connections": {
+    "title": "Connexions"
+  },
+  "instance": {
+    "tabs": {
+      "general": "Général",
+      "registration": "Inscription",
+      "federation": "Fédération",
+      "streaming": "Streaming",
+      "storage": "Stockage",
+      "users": "Utilisateurs",
+      "updates": "Mises à jour",
+      "telemetry": "Dire bonjour"
+    }
+  },
+  "keybinds": {
+    "portal": {
+      "description": "Sous Wayland, c'est le bureau qui gère tous les raccourcis de Backspace. Attribuez, modifiez ou supprimez des touches dans les paramètres de raccourcis clavier du système, sous Backspace. Les raccourcis locaux du navigateur ou de X11 ne sont pas utilisés ici.",
+      "idle": "Préparation du premier enregistrement de toutes les actions disponibles.",
+      "pending": "Connexion au portail du bureau. Si une boîte de dialogue système apparaît, choisissez les raccourcis des actions que vous souhaitez utiliser.",
+      "ready": "Backspace est enregistré. Ouvrez les paramètres de raccourcis clavier de votre système pour modifier ou supprimer des attributions. La liste ci-dessous est en lecture seule et s'actualise lorsque vous revenez dans Backspace.",
+      "unavailable": "Le portail n'est pas disponible, l'autorisation a été refusée ou la session s'est terminée. Un backend du portail de raccourcis globaux est nécessaire. Les raccourcis locaux sont désactivés sous Wayland.",
+      "retry": "Enregistrer ou reconnecter les raccourcis",
+      "assigned": "Raccourci système : {{shortcut}}",
+      "notAssigned": "Aucune attribution système active"
+    },
+    "title": "Raccourcis clavier",
+    "note": {
+      "webOnly": "Les raccourcis fonctionnent lorsque cet onglet est actif. Pour des raccourcis globaux qui fonctionnent dans les autres applications, utilisez l'application de bureau."
+    },
+    "section": {
+      "voice": "Raccourcis vocaux"
+    },
+    "action": {
+      "toggleMute": "Activer/désactiver le micro",
+      "toggleDeafen": "Activer/désactiver le son",
+      "pushToTalk": "Appuyer pour parler",
+      "toggleCamera": "Activer/désactiver la caméra",
+      "toggleScreenShare": "Activer/désactiver le partage d'écran",
+      "disconnect": "Se déconnecter"
+    },
+    "row": {
+      "recordingPrompt": "Appuyez sur une combinaison de touches…",
+      "notBound": "Non attribué",
+      "record": "Enregistrer",
+      "escToCancel": "Échap pour annuler"
+    },
+    "key": {
+      "shift": "Maj",
+      "ctrl": "Ctrl",
+      "alt": "Alt",
+      "option": "Option",
+      "cmd": "Cmd",
+      "win": "Win",
+      "space": "Espace",
+      "middleClick": "Clic central",
+      "mouse4": "Souris 4",
+      "mouse5": "Souris 5",
+      "mouseGeneric": "Souris {{button}}"
+    },
+    "accessibility": {
+      "title": "Autorisation d'accessibilité requise",
+      "description": "Backspace a besoin de l'autorisation d'accessibilité pour que les raccourcis globaux fonctionnent en dehors de l'application.",
+      "grant": "Accorder l'autorisation"
+    },
+    "hookError": {
+      "title": "Raccourcis globaux indisponibles",
+      "description": "Impossible de démarrer l'écouteur d'entrée. Sous Linux, votre utilisateur doit peut-être appartenir au groupe <code>input</code>."
+    },
+    "conflict": {
+      "message": "<strong>{{combo}}</strong> est déjà attribué à <strong>{{action}}</strong>. Remplacer ?",
+      "overwrite": "Remplacer"
+    }
+  },
+  "desktop": {
+    "title": "Bureau",
+    "autoLaunch": {
+      "openAtLogin": {
+        "label": "Lancer au démarrage",
+        "description": "Lancer automatiquement Backspace à l'ouverture de votre session"
+      },
+      "startMinimized": {
+        "label": "Démarrer en mode réduit",
+        "description": "Démarrer masqué dans la zone de notification au lieu d'afficher la fenêtre"
+      }
+    },
+    "updates": {
+      "appName": "Backspace Desktop",
+      "versionLabel": "Version {{version}}",
+      "checking": "Recherche de mises à jour…",
+      "checkingShort": "Recherche…",
+      "checkNow": "Rechercher des mises à jour",
+      "downloading": "Téléchargement de {{version}}, {{percent}} %",
+      "downloadingWithRate": "Téléchargement de {{version}}, {{percent}} % à {{rate}}",
+      "rateMegabytes": "{{value}} Mo/s",
+      "rateKilobytes": "{{value}} Ko/s",
+      "upToDate": "Vous utilisez la dernière version",
+      "available": "La version {{version}} est disponible",
+      "readyToInstall": "La version {{version}} est prête à être installée",
+      "installFailed": "Impossible d'installer la version {{version}}",
+      "checkFailed": "La dernière recherche de mises à jour a échoué",
+      "idle": "Rechercher de nouvelles versions de l'application de bureau",
+      "external": "Les mises à jour sont installées via votre gestionnaire de logiciels Flatpak",
+      "download": "Télécharger",
+      "restart": "Redémarrer",
+      "manualNote": "Cette version ne peut pas installer les mises à jour elle-même : les nouvelles versions se téléchargent depuis GitHub et remplacent l'application manuellement. Consultez les notes de version pour connaître les étapes sur votre plateforme.",
+      "externalNote": "Flatpak applique les mises à jour de manière atomique, en dehors de l'application. Utilisez votre gestionnaire de logiciels ou la commande <code>flatpak update</code> pour mettre Backspace à jour."
+    },
+    "instance": {
+      "current": "Instance actuellement connectée",
+      "change": "Changer d'instance"
+    }
+  },
+  "desktopDownload": {
+    "title": "Bureau",
+    "intro": "Raccourcis globaux, lancement au démarrage et icône dans la zone de notification.",
+    "unsupported": "L'application de bureau fonctionne sous Windows, Linux et macOS.",
+    "name": {
+      "windows": "Windows",
+      "mac": "macOS",
+      "linux": "Linux"
+    },
+    "tag": {
+      "windows": "Ce PC",
+      "mac": "Ce Mac",
+      "linux": "Cette machine"
+    },
+    "covers": {
+      "windows": "x64 ou arm64",
+      "mac": "Fonctionne sur les Mac Apple Silicon et Intel",
+      "linux": "AppImage ou paquet deb, x64 ou arm64"
+    },
+    "download": {
+      "windows": "Télécharger pour Windows",
+      "mac": "Télécharger pour macOS",
+      "linux": "Télécharger pour Linux"
+    },
+    "picker": {
+      "architecture": "Architecture",
+      "format": "Format du paquet"
+    },
+    "arch": {
+      "appleSilicon": "Apple Silicon",
+      "intel": "Intel",
+      "x64": "x64",
+      "arm64": "arm64"
+    },
+    "kind": {
+      "appimage": "AppImage",
+      "deb": "deb"
+    },
+    "archGuessed": {
+      "windows": "Votre navigateur n'a pas indiqué le processeur de ce PC, x64 est donc présélectionné.",
+      "mac": "Votre navigateur n'a pas indiqué la puce de ce Mac, Apple Silicon est donc présélectionné.",
+      "linux": "Votre navigateur n'a pas indiqué le processeur de cette machine, x64 est donc présélectionné."
+    },
+    "version": "Version {{version}}",
+    "allReleases": "Toutes les versions sur GitHub"
+  }
+}

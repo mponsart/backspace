@@ -1,0 +1,336 @@
+{
+  "connections": {
+    "title": "Instances connectées",
+    "description": "Reliez vos comptes entre les instances Backspace fédérées.",
+    "empty": "Aucune instance distante connectée. Ajoutez-en une pour commencer à fédérer.",
+    "addButton": "+ Ajouter une instance",
+    "home": {
+      "title": "Instance d'origine",
+      "asUser": "en tant que {{username}}",
+      "local": "Locale"
+    },
+    "status": {
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "unreachable": "Injoignable",
+      "authExpired": "Authentification expirée"
+    },
+    "add": {
+      "title": "Ajouter une instance distante",
+      "urlPlaceholder": "https://instance.example.com",
+      "probing": "Sondage…",
+      "connect": "Se connecter",
+      "connecting": "Connexion…",
+      "registrationClosed": "Cette instance a désactivé les nouvelles inscriptions fédérées. Les comptes existants peuvent toujours se connecter.",
+      "passwordLabel": "Saisissez votre mot de passe pour vous connecter à {{host}}",
+      "passwordPlaceholder": "Celui que vous utilisez pour vous connecter",
+      "passwordHint": "Votre mot de passe est vérifié par votre instance d'origine et n'est jamais envoyé à {{host}}. Cette instance reçoit un identifiant unique généré rien que pour elle.",
+      "fallbackNotice": {
+        "credentialRefused": "Un compte existe déjà sur {{host}} et cette instance n'accepte pas l'identifiant délivré par votre instance d'origine. Connectez-vous avec le mot de passe que vous avez défini sur cette instance. Il sera ensuite remplacé par l'identifiant délivré.",
+        "registrationClosed": "{{host}} n'accepte pas de nouveaux comptes venant d'autres instances, aucun compte n'a donc pu y être créé pour vous. Si vous avez déjà un compte sur {{host}}, connectez-vous avec celui-ci ci-dessous."
+      },
+      "usernamePlaceholder": "Votre nom d'utilisateur sur cette instance",
+      "remotePasswordLabel": "Mot de passe pour cette instance",
+      "remotePasswordPlaceholder": "Mot de passe sur l'instance distante",
+      "loggingIn": "Connexion…",
+      "loginAndConnect": "Se connecter"
+    },
+    "filter": {
+      "all": "Toutes",
+      "connected": "Connectées",
+      "disconnected": "Déconnectées",
+      "issues": "Problèmes",
+      "noMatch": "Aucune instance ne correspond au filtre actuel."
+    },
+    "sort": {
+      "dateAdded": "Date d'ajout",
+      "lastConnected": "Dernière connexion"
+    },
+    "row": {
+      "asUser": "en tant que {{username}}",
+      "added": "Ajoutée {{date}}",
+      "connectedAgo": "Connectée {{time}}",
+      "disconnectedAgo": "Déconnectée {{time}}",
+      "lastConnectedAgo": "Dernière connexion {{time}}",
+      "remoteUserId": "ID d'utilisateur distant",
+      "addedLabel": "Ajoutée",
+      "disconnectedLabel": "Déconnectée",
+      "lastConnectedLabel": "Dernière connexion",
+      "homePasswordLabel": "Mot de passe de votre compte d'origine",
+      "disconnect": "Se déconnecter",
+      "reconnect": "Se reconnecter",
+      "reauthenticate": "S'authentifier à nouveau",
+      "forceRemove": "Supprimer de force",
+      "deleteIdentity": "Supprimer l'identité",
+      "deleteIdentityDisabled": "Déconnectez-vous d'abord pour supprimer l'identité",
+      "reason": {
+        "unreachable": "Impossible de joindre cette instance.",
+        "sessionExpired": "La session enregistrée a expiré. Authentifiez-vous à nouveau pour vous reconnecter.",
+        "reauthenticate": "Authentifiez-vous à nouveau pour vous connecter.",
+        "authenticateHome": "Authentifiez-vous pour vous connecter à votre instance d'origine."
+      }
+    },
+    "forceRemove": {
+      "title": "Supprimer l'entrée de force",
+      "description": "Cela supprimera l'entrée du registre pour {{name}}. L'instance distante ne sera pas prévenue. À n'utiliser que si l'instance est définitivement injoignable.",
+      "confirm": "Supprimer de force"
+    },
+    "deleteIdentity": {
+      "title": "Supprimer l'identité",
+      "description": "Supprimez votre identité fédérée sur <name>{{name}}</name>. Choisissez comment vos données doivent être traitées.",
+      "leave": {
+        "title": "Partir discrètement",
+        "description": "Se déconnecter de cette instance. Votre compte et toutes vos données sont conservés."
+      },
+      "soft": {
+        "title": "Supprimer l'utilisateur",
+        "description": "Supprimer votre compte tout en conservant vos messages. Vous apparaîtrez comme « Utilisateur supprimé »."
+      },
+      "full": {
+        "title": "Tout effacer",
+        "description": "Supprimer votre compte ainsi que tous vos messages, MP, réactions et fichiers. Il ne reste rien."
+      },
+      "scope": {
+        "heading": "Portée",
+        "this": "Cette instance uniquement",
+        "select": "Sélectionner des instances…",
+        "all": "Toutes les instances distantes"
+      },
+      "deleting": "Suppression…",
+      "disconnect": "Se déconnecter",
+      "confirm": "Supprimer l'identité",
+      "toast": {
+        "disconnected": "Déconnexion réussie",
+        "deleted_one": "Identité supprimée",
+        "deleted_many": "Identité supprimée sur {{count}} d'instances",
+        "deleted_other": "Identité supprimée sur {{count}} instances",
+        "ownsSpaces": "{{host}} : transférez d'abord la propriété des espaces",
+        "failed": "{{host}} : {{error}}",
+        "failedGeneric": "Échec"
+      }
+    },
+    "action": {
+      "friendRequest": "demande d'ami",
+      "spaceJoin": "adhésion à un espace",
+      "directMessage": "message privé",
+      "friendRequestTo": "Demande d'ami à {{target}}",
+      "joinSpace": "Rejoindre {{target}}",
+      "directMessageTo": "Message privé à {{target}}",
+      "instanceConnect": "connexion",
+      "connectTo": "Se connecter à {{target}}"
+    },
+    "pending": {
+      "title": "Approbations de pairage en attente",
+      "description": "Votre administrateur doit les approuver avant que ces demandes puissent aboutir.",
+      "onPeer": "sur <peer>{{peer}}</peer>",
+      "cancelling": "Annulation…",
+      "cancelled": "Demande de pairage annulée",
+      "cancelFailed": "Impossible d'annuler : {{error}}"
+    },
+    "outcomes": {
+      "title": "Résultats récents des pairages",
+      "approved": "Votre demande de pairage avec {{host}} a été approuvée par votre administrateur.",
+      "denied": "Votre demande de pairage avec {{host}} a été refusée par votre administrateur.",
+      "expired": "Votre demande de pairage avec {{host}} a expiré sans action de l'administrateur.",
+      "originalAction": "Action d'origine : {{action}}",
+      "retry": "Réessayer : {{action}}",
+      "dismissing": "Fermeture…",
+      "dismissFailed": "Impossible d'ignorer : {{error}}",
+      "dismissAllFailed": "Impossible de tout ignorer : {{error}}"
+    },
+    "peering": {
+      "unavailable": "Les messages avec les personnes de {{name}} ne peuvent pas être relayés tant qu'un administrateur n'a pas approuvé le pairage avec cette instance.",
+      "inProgress": "Pairage avec {{name}} en cours de configuration. Les messages avec les personnes de cette instance seront bientôt relayés."
+    }
+  },
+  "admin": {
+    "title": "Fédération",
+    "description": "Configurez le relais de fédération, la rotation des secrets et gérez les instances pairées.",
+    "relay": {
+      "title": "Paramètres du relais",
+      "description": "Contrôlez le relais des MP entre les instances fédérées. Lorsqu'il est activé, les MP avec des utilisateurs d'instances pairées sont relayés de serveur à serveur.",
+      "enable": {
+        "label": "Activer le relais des MP",
+        "description": "Relayer les messages privés vers et depuis les instances pairées"
+      },
+      "autoAccept": {
+        "label": "Accepter automatiquement les pairages",
+        "description": "Accepter automatiquement les demandes de pairage des autres instances. Lorsque cette option est désactivée, seuls les pairages lancés manuellement sont autorisés."
+      },
+      "ttl": {
+        "label": "Durée de vie du relais (jours)",
+        "description": "Durée de conservation des messages relayés dans la file d'envoi avant leur nettoyage"
+      },
+      "rotation": {
+        "label": "Rotation des secrets par défaut (jours)",
+        "description": "Intervalle de rotation automatique pour les nouvelles instances pairées. Les instances existantes conservent leur réglage actuel."
+      }
+    },
+    "status": {
+      "active": "Actif",
+      "pending": "En attente",
+      "unreachable": "Injoignable",
+      "rejected": "Rejeté (pairage automatique refusé)",
+      "rejectedShort": "Rejeté",
+      "revoked": "Révoqué",
+      "awaitingApproval": "En attente d'approbation",
+      "needsAttention": "Nécessite votre attention"
+    },
+    "filter": {
+      "statusHeading": "Statut",
+      "sort": {
+        "domain": "Domaine (A-Z)",
+        "lastSeen": "Dernière activité",
+        "dateAdded": "Date d'ajout",
+        "failures": "Échecs",
+        "revokedDate": "Date de révocation"
+      }
+    },
+    "views": {
+      "active": "Actifs",
+      "revoked": "Révoqués"
+    },
+    "peer": {
+      "instanceName": "Nom de l'instance",
+      "revokedMeta": "Révoqué : {{revoked}} · Pairé : {{peered}}",
+      "unreachableMeta": "Dernière activité : {{lastSeen}} · {{failures}}",
+      "activeMeta": "Dernière activité : {{lastSeen}} · Synchronisé : {{synced}}",
+      "failures_one": "{{count}} échec",
+      "failures_many": "{{count}} d'échecs",
+      "failures_other": "{{count}} échecs",
+      "reinitiate": "Relancer le pairage",
+      "deletePermanently": "Supprimer définitivement",
+      "consecutiveFailures": "Échecs consécutifs",
+      "authFailures": "Échecs d'authentification",
+      "lastFailure": "Dernier échec",
+      "peeredSince": "Pairé depuis",
+      "secretRotated": "Dernière rotation du secret",
+      "autoRotate": "Rotation automatique",
+      "rotationStatus": "État de la rotation",
+      "rotateEvery_one": "Tous les {{count}} jour",
+      "rotateEvery_many": "Tous les {{count}} de jours",
+      "rotateEvery_other": "Tous les {{count}} jours",
+      "defaultTag": "(par défaut)",
+      "inProgress": "En cours",
+      "idle": "Inactive",
+      "intervalRange": "Doit être compris entre 1 et 365",
+      "intervalUpdated": "Intervalle de rotation mis à jour",
+      "checking": "Vérification…",
+      "checkNow": "Vérifier maintenant",
+      "resetPeering": "Réinitialiser le pairage",
+      "rotateSecret": "Renouveler le secret",
+      "rotationInProgress": "Une rotation est déjà en cours",
+      "revoke": "Révoquer",
+      "editInterval": "Modifier l'intervalle de rotation"
+    },
+    "approvals": {
+      "title": "Demandes d'approbation en attente",
+      "outboundTitle_one": "{{name}} — {{count}} utilisateur souhaite que nous nous pairions",
+      "outboundTitle_many": "{{name}} — {{count}} d'utilisateurs souhaitent que nous nous pairions",
+      "outboundTitle_other": "{{name}} — {{count}} utilisateurs souhaitent que nous nous pairions",
+      "requested": "Demandé {{time}}",
+      "subscriber": {
+        "friendAdd": "ajout en ami de {{target}}",
+        "spaceJoin": "souhaite rejoindre {{target}}",
+        "directMessage": "souhaite envoyer un MP à {{target}}",
+        "instanceConnect": "a connecté un compte sur {{target}}"
+      },
+      "approve": "Approuver",
+      "deny": "Refuser",
+      "established": "Pairage établi avec {{name}}",
+      "deniedToast": "Demande de pairage de {{name}} refusée",
+      "confirm": {
+        "approveTitle": "Approuver la demande de pairage",
+        "denyTitle": "Refuser la demande de pairage",
+        "approveOutbound_one": "Cela lancera une négociation de pairage avec {{name}} au nom de l'{{count}} utilisateur demandeur. L'instance distante doit être joignable.",
+        "approveOutbound_many": "Cela lancera une négociation de pairage avec {{name}} au nom des {{count}} d'utilisateurs demandeurs. L'instance distante doit être joignable.",
+        "approveOutbound_other": "Cela lancera une négociation de pairage avec {{name}} au nom des {{count}} utilisateurs demandeurs. L'instance distante doit être joignable.",
+        "approveInbound": "Cela lancera une négociation de pairage avec {{name}}. L'instance distante doit être joignable.",
+        "denyOutbound_one": "Cela refusera la demande de pairage sortante et préviendra l'utilisateur demandeur. Il pourra la renouveler en refaisant la même action.",
+        "denyOutbound_many": "Cela refusera la demande de pairage sortante et préviendra les utilisateurs demandeurs. Ils pourront la renouveler en refaisant la même action.",
+        "denyOutbound_other": "Cela refusera la demande de pairage sortante et préviendra les utilisateurs demandeurs. Ils pourront la renouveler en refaisant la même action.",
+        "denyInbound": "Cela refusera la demande et bloquera les futures demandes de pairage automatique de {{name}}. Vous pourrez la débloquer plus tard depuis la liste des instances rejetées.",
+        "approveAndPeer": "Approuver et pairer",
+        "approve": "Approuver",
+        "denyAndNotify": "Refuser et prévenir",
+        "deny": "Refuser"
+      }
+    },
+    "resetCleanup": {
+      "title": "Nettoyage après réinitialisation",
+      "peerReset": "{{name}} a été réinitialisée",
+      "peerResetDescription": "Une nouvelle instance tourne sur ce domaine. Rétablissez la fédération pour réparer les amitiés et les MP obsolètes.",
+      "repeer": "Pairer à nouveau",
+      "resetToast": "{{host}} a été réinitialisée — la fédération doit être rétablie",
+      "repeerIncomplete": "Pairage incomplet — {{name}} conserve un pairage obsolète vous concernant. Son administrateur doit réinitialiser son côté, puis vous devez pairer à nouveau.",
+      "repeerInitiated": "Pairage relancé avec {{name}}",
+      "removed": "{{username}} et tout son contenu ont été supprimés",
+      "ownsSpaces": "{{username}} possède des espaces — transférez d'abord la propriété (Paramètres de l'espace → Propriété).",
+      "staleRemote": "L'instance distante conserve un pairage obsolète vous concernant. Demandez à son administrateur de réinitialiser son côté, puis pairez à nouveau.",
+      "eventSummary": "<host>{{host}}</host> a été réinitialisée — {{identities}} nettoyées automatiquement, {{accounts}} avec du contenu local détachés. Les comptes détachés continuent de fonctionner localement — leurs propriétaires gardent l'accès avec leur mot de passe actuel. Le propriétaire peut rattacher un compte détaché à sa nouvelle identité d'origine depuis les paramètres de ce compte (Compte → avis de détachement) lorsqu'il est connecté aux deux.",
+      "identitiesCleaned_one": "{{count}} identité répliquée",
+      "identitiesCleaned_many": "{{count}} d'identités répliquées",
+      "identitiesCleaned_other": "{{count}} identités répliquées",
+      "accountsDetached_one": "{{count}} compte",
+      "accountsDetached_many": "{{count}} de comptes",
+      "accountsDetached_other": "{{count}} comptes",
+      "memberships_one": "{{count}} adhésion",
+      "memberships_many": "{{count}} d'adhésions",
+      "memberships_other": "{{count}} adhésions",
+      "messages_one": "{{count}} message",
+      "messages_many": "{{count}} de messages",
+      "messages_other": "{{count}} messages",
+      "owns": "Possède : {{spaces}}",
+      "dismissKeep": "Ignorer — conserver tous les comptes détachés",
+      "confirm": {
+        "repeerTitle": "Rétablir la fédération",
+        "removeTitle": "Supprimer le compte détaché",
+        "repeerDescription": "Cela supprime l'enregistrement local de l'instance pairée et lance une nouvelle négociation authentifiée avec {{origin}}. L'instance distante doit être joignable et, si elle n'accepte pas automatiquement, approuver la demande.",
+        "removeDescription": "Supprimer définitivement {{username}} et tout son contenu sur cette instance ? Cette action est irréversible.",
+        "repeerConfirm": "Pairer à nouveau et réparer",
+        "removeConfirm": "Supprimer définitivement"
+      }
+    },
+    "peers": {
+      "title": "Instances pairées",
+      "empty": "Aucune instance pairée configurée. Les pairages sont créés automatiquement lorsque des utilisateurs se connectent à des instances distantes.",
+      "noMatch": "Aucune instance pairée ne correspond au filtre actuel.",
+      "noRevoked": "Aucune instance pairée révoquée.",
+      "backOnline": "{{name}} est de nouveau en ligne",
+      "stillUnreachable": "{{name}} est toujours injoignable",
+      "rotationInitiated": "Rotation du secret lancée — délai de grâce de 15 minutes",
+      "revoked": "Instance pairée révoquée",
+      "reinitiated": "Pairage relancé",
+      "reinitiateFailed": "L'enregistrement de l'instance pairée a été supprimé mais la négociation a échoué : {{error}}. Pairez à nouveau manuellement avec {{origin}}",
+      "deleted": "Instance pairée définitivement supprimée",
+      "resetDone": "Pairage réinitialisé pour {{name}}",
+      "confirm": {
+        "rotate": {
+          "title": "Renouveler le secret HMAC",
+          "description": "Cela générera un nouveau secret HMAC pour {{name}}. Les deux instances accepteront l'ancien et le nouveau secret pendant un délai de grâce de 15 minutes.",
+          "confirm": "Renouveler"
+        },
+        "revoke": {
+          "title": "Révoquer l'instance pairée",
+          "description": "Cela arrêtera tout le trafic de relais de fédération avec {{name}}. Les entrées en attente dans la file d'envoi seront purgées. Vous pourrez relancer le pairage plus tard.",
+          "confirm": "Révoquer"
+        },
+        "reinitiate": {
+          "title": "Relancer le pairage",
+          "description": "Cela supprimera l'enregistrement révoqué et lancera une nouvelle négociation avec {{origin}}. L'instance distante doit être joignable.",
+          "confirm": "Relancer"
+        },
+        "delete": {
+          "title": "Supprimer l'enregistrement de l'instance pairée",
+          "description": "Cela supprimera définitivement l'enregistrement de {{name}}. Cette action est irréversible.",
+          "confirm": "Supprimer"
+        },
+        "reset": {
+          "title": "Réinitialiser le pairage",
+          "description": "Réinitialiser le pairage avec {{name}} ? Cela supprime l'enregistrement local de l'instance pairée ainsi que toutes les entrées en attente dans la file d'envoi. Après la réinitialisation, vous devrez relancer le pairage avec l'administrateur distant par un autre canal. Cette action est irréversible.",
+          "confirm": "Réinitialiser"
+        }
+      }
+    }
+  }
+}

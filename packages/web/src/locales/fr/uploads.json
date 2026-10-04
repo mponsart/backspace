@@ -1,0 +1,20 @@
+{
+  "transfers": {
+    "title": "Transferts",
+    "count_one": "{{count}} transfert",
+    "count_many": "{{count}} de transferts",
+    "count_other": "{{count}} transferts",
+    "clearCompleted": "Effacer les transferts terminés",
+    "empty": "Aucun transfert en cours.",
+    "status": {
+      "done": "Terminé",
+      "failed": "Échec : {{reason}}",
+      "aborted": "Abandonné",
+      "progress": "{{loaded}} / {{total}}"
+    }
+  },
+  "crop": {
+    "title": "Recadrer l'image",
+    "applying": "Application…"
+  }
+}

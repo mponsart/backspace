@@ -1,0 +1,7 @@
+{
+  "you": {
+    "editProfile": "Modifier le profil",
+    "homeInstance": "Instance d'origine : {{domain}}",
+    "logOutConfirm": "Voulez-vous vraiment vous déconnecter ?"
+  }
+}

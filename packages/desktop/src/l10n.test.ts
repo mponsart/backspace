@@ -20,7 +20,7 @@ describe('resolveDesktopLanguage', () => {
   });
 
   it('falls back to English when neither is shipped', () => {
-    expect(resolveDesktopLanguage(null, 'fr-FR')).toBe('en');
+    expect(resolveDesktopLanguage(null, 'es-ES')).toBe('en');
     expect(resolveDesktopLanguage(null, '')).toBe('en');
   });
 });
@@ -30,11 +30,13 @@ describe('translateDesktop', () => {
     expect(translateDesktop('en', 'tray.show')).toBe('Show Backspace');
     expect(translateDesktop('ru', 'tray.show')).toBe('Показать Backspace');
     expect(translateDesktop('de', 'tray.show')).toBe('Backspace anzeigen');
+    expect(translateDesktop('fr', 'tray.show')).toBe('Afficher Backspace');
   });
 
   it('interpolates a version into the download item', () => {
     expect(translateDesktop('en', 'update.downloadVersion', { version: '1.2.3' })).toBe('Download Backspace 1.2.3…');
     expect(translateDesktop('de', 'update.downloadVersion', { version: '1.2.3' })).toBe('Backspace 1.2.3 herunterladen…');
+    expect(translateDesktop('fr', 'update.downloadVersion', { version: '1.2.3' })).toBe('Télécharger Backspace 1.2.3…');
   });
 });
 

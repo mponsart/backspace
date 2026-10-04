@@ -1,0 +1,635 @@
+{
+  "create": {
+    "title": "Créer un espace",
+    "icon": {
+      "upload": "Téléverser",
+      "previewAlt": "Aperçu de l'icône",
+      "colorLabel": "Couleur de l'icône",
+      "cropTitle": "Recadrer l'icône de l'espace",
+      "uploadFailed": "Impossible de téléverser l'icône"
+    },
+    "name": {
+      "label": "Nom de l'espace",
+      "placeholder": "Mon super espace",
+      "required": "Le nom de l'espace est obligatoire"
+    },
+    "visibilityLabel": "Visibilité",
+    "description": {
+      "label": "Description",
+      "placeholder": "Une courte description de votre espace…",
+      "counter": "{{length}}/{{max}}"
+    },
+    "submit": "Créer",
+    "submitting": "Création…"
+  },
+  "channel": {
+    "create": {
+      "title": "Créer un salon",
+      "typeLabel": "Type de salon",
+      "types": {
+        "text": {
+          "name": "Textuel",
+          "description": "Envoyez des messages, des images et des fichiers"
+        },
+        "voice": {
+          "name": "Vocal",
+          "description": "Retrouvez-vous en voix et en vidéo"
+        }
+      },
+      "nameLabel": "Nom du salon",
+      "namePlaceholder": "nouveau-salon",
+      "topicLabel": "Sujet (facultatif)",
+      "topicPlaceholder": "De quoi parle ce salon ?",
+      "categoryLabel": "Catégorie",
+      "noCategory": "Aucune catégorie",
+      "nameRequired": "Le nom du salon est obligatoire",
+      "noSpaceSelected": "Aucun espace sélectionné",
+      "submit": "Créer le salon",
+      "submitting": "Création…"
+    },
+    "settings": {
+      "title": "Paramètres du salon",
+      "rename": "Renommer le salon",
+      "nameLabel": "Nom du salon",
+      "channelLabel": "Salon",
+      "private": {
+        "label": "Salon privé",
+        "description": "Seuls les membres et les rôles sélectionnés pourront voir ce salon.",
+        "note": "Ce salon est masqué pour les membres qui n'y ont pas explicitement accès. Les utilisateurs disposant de la permission Administrateur et les propriétaires de l'espace voient toujours tous les salons.",
+        "unhideOnSave": "L'enregistrement rendra ce salon visible pour tous les membres."
+      },
+      "deleteButton": "Supprimer le salon"
+    },
+    "delete": {
+      "title": "Supprimer #{{name}} ?",
+      "description": "Cela supprimera définitivement <strong>#{{name}}</strong> et tous ses messages. Cette action est irréversible.",
+      "descriptionVoice": "Cela supprimera définitivement <strong>#{{name}}</strong> et tous ses messages. Toutes les personnes actuellement présentes dans ce salon vocal seront déconnectées. Cette action est irréversible.",
+      "confirm": "Supprimer le salon"
+    }
+  },
+  "category": {
+    "create": {
+      "title": "Créer une catégorie",
+      "nameLabel": "Nom de la catégorie",
+      "namePlaceholder": "nouvelle-categorie",
+      "nameRequired": "Le nom de la catégorie est obligatoire",
+      "noSpaceSelected": "Aucun espace sélectionné",
+      "submit": "Créer la catégorie",
+      "submitting": "Création…"
+    },
+    "settings": {
+      "title": "Paramètres de la catégorie",
+      "rename": "Renommer la catégorie",
+      "nameLabel": "Nom de la catégorie",
+      "categoryLabel": "Catégorie",
+      "private": {
+        "label": "Catégorie privée",
+        "description": "Seuls les membres et les rôles sélectionnés pourront voir les salons de cette catégorie.",
+        "note": "Cette catégorie est masquée pour les membres qui n'y ont pas explicitement accès. Les salons qu'elle contient héritent de cette restriction, sauf s'ils la remplacent explicitement.",
+        "unhideOnSave": "L'enregistrement rendra cette catégorie, ainsi que ses salons qui ne se masquent pas eux-mêmes, visibles pour tous les membres."
+      },
+      "deleteButton": "Supprimer la catégorie"
+    },
+    "delete": {
+      "title": "Supprimer « {{name}} » ?",
+      "description": "Cela supprimera définitivement la catégorie <strong>{{name}}</strong>. Les salons qu'elle contient seront déplacés au premier niveau. Cette action est irréversible.",
+      "confirm": "Supprimer la catégorie"
+    }
+  },
+  "invite": {
+    "title": "Inviter des amis",
+    "intro": "Envoyez l'invitation à vos amis, ou partagez un lien.",
+    "requestOnly": {
+      "notice": "Cet espace fonctionne sur demande d'adhésion. Les personnes le rejoignent en demandant l'approbation d'un gestionnaire, il n'y a donc pas de lien d'invitation à partager.",
+      "dismiss": "Compris"
+    },
+    "searchPlaceholder": "Rechercher des amis…",
+    "noMatches": "Aucun ami ne correspond à votre recherche",
+    "noFriends": "Pas encore d'amis",
+    "alreadyMember": "Déjà dans l'espace",
+    "removeSelected": "Retirer {{name}}",
+    "selectFriends": "Sélectionner des amis",
+    "send_one": "Envoyer {{count}} invitation",
+    "send_many": "Envoyer {{count}} d'invitations",
+    "send_other": "Envoyer {{count}} invitations",
+    "sending": "Envoi…",
+    "retryFailed": "Réessayer les échecs",
+    "status": {
+      "sent": "✓ Envoyée",
+      "failed": "✗ {{reason}}"
+    },
+    "shareLink": "Ou partagez un lien",
+    "generating": "Génération…",
+    "generateFailed": "Impossible de générer le lien d'invitation",
+    "failure": {
+      "inviteInvalid": "Le lien d'invitation n'est plus valide",
+      "notAFriend": "Pas un ami",
+      "userNotFound": "Utilisateur introuvable",
+      "alreadyMember": "Déjà membre",
+      "upstream": "Impossible de vérifier l'invitation, réessayez",
+      "cannotInviteSelf": "Vous ne pouvez pas vous inviter vous-même",
+      "invalidBody": "Requête invalide",
+      "invalidTarget": "Destinataire invalide",
+      "unreachable": "Impossible de joindre votre instance",
+      "serverError": "Envoi impossible (erreur serveur)"
+    }
+  },
+  "join": {
+    "title": "Rejoindre un espace",
+    "discoverIntro": "Découvrez des espaces à rejoindre, ou parcourez-les tous dans Explorer.",
+    "discoverError": "Impossible de charger les espaces à découvrir pour le moment. Vous pouvez toujours rejoindre un espace avec un code d'invitation ci-dessous.",
+    "discoverEmpty": "Aucun espace à découvrir pour l'instant. Essayez un code d'invitation ci-dessous, ou revenez plus tard.",
+    "browseExplore": "Tout parcourir dans Explorer",
+    "discoveryOff": "La découverte d'espaces est désactivée sur cette instance. Vous pouvez toujours rejoindre un espace avec un code d'invitation.",
+    "inviteDivider": "Vous avez un code d'invitation ?",
+    "invitePlaceholder": "p. ex. abc123 ou https://instance.com/join/abc123",
+    "submit": "Rejoindre l'espace",
+    "submitting": "Connexion à l'espace…",
+    "connect": {
+      "intro": "Connectez-vous à <host>{{host}}</host> pour rejoindre cet espace.",
+      "passwordLabel": "Saisissez votre mot de passe pour vous connecter",
+      "passwordPlaceholder": "Le mot de passe de votre compte",
+      "passwordNote": "Votre mot de passe est vérifié par votre instance d'origine et n'est jamais envoyé à {{host}}. Cette instance reçoit un identifiant unique généré rien que pour elle.",
+      "submit": "Se connecter et rejoindre",
+      "submitting": "Connexion…"
+    },
+    "fallback": {
+      "usernamePlaceholder": "Votre nom d'utilisateur sur cette instance",
+      "passwordLabel": "Mot de passe pour cette instance",
+      "passwordPlaceholder": "Mot de passe sur l'instance distante",
+      "submit": "Se connecter et rejoindre",
+      "submitting": "Connexion…"
+    }
+  },
+  "explore": {
+    "title": "Explorer",
+    "searchPlaceholder": "Rechercher des espaces…",
+    "discoveryOff": {
+      "member": "L'administrateur de votre instance a désactivé la découverte d'espaces. Les espaces d'ici ne peuvent être rejoints que par lien d'invitation.",
+      "admin": "La découverte d'espaces est désactivée sur cette instance. Les espaces d'ici ne peuvent être rejoints que par lien d'invitation.",
+      "enable": "Activer la découverte d'espaces",
+      "failed": "Impossible de modifier le paramètre."
+    },
+    "browseOff": {
+      "member": "Les espaces des autres instances ne sont pas affichés ici, car l'administrateur de votre instance a désactivé cette option.",
+      "admin": "Les espaces des autres instances ne sont pas affichés ici.",
+      "action": "Afficher les espaces globaux dans Explorer",
+      "confirm": {
+        "title": "Afficher ici les espaces des autres instances ?",
+        "exposure": "Ces instances voient l'adresse IP de chaque navigateur qui en charge un, et l'administrateur de cette instance n'a aucun contrôle sur elles.",
+        "off": "Pour ne plus les afficher plus tard : Paramètres, Instance, Général, l'interrupteur des espaces globaux dans Explorer.",
+        "action": "Afficher les espaces globaux"
+      }
+    },
+    "notListed": {
+      "text": "Aucun espace d'ici n'est répertorié dans l'annuaire public.",
+      "action": "Les répertorier",
+      "confirm": {
+        "title": "Répertorier publiquement les espaces de cette instance ?",
+        "optIn": "Seuls les espaces dont les propriétaires activent le référencement sont envoyés : cet interrupteur ne répertorie donc aucun espace à lui seul.",
+        "off": "Pour arrêter le référencement plus tard : Paramètres, Instance, Général, le choix de découverte des espaces.",
+        "action": "Répertorier les espaces"
+      }
+    },
+    "noMatches": "Aucun espace ne correspond à votre recherche.",
+    "empty": "Aucun espace à découvrir pour l'instant.",
+    "joinedSection": "Rejoints",
+    "notConnected": "Non connecté à {{host}}",
+    "inner": {
+      "title": "Espace intérieur",
+      "subtitle": "Les espaces de vos instances",
+      "noneAnswered": "Aucune instance n'a répondu. L'espace intérieur reste vide tant qu'aucune ne répond.",
+      "unreachable_one": "Impossible de joindre {{hosts}}. Les espaces de cette instance ne sont pas affichés.",
+      "unreachable_many": "Impossible de joindre {{hosts}}. Les espaces de ces instances ne sont pas affichés.",
+      "unreachable_other": "Impossible de joindre {{hosts}}. Les espaces de ces instances ne sont pas affichés."
+    },
+    "outer": {
+      "title": "Espace extérieur",
+      "subtitle": "Les communautés de tout Backspace",
+      "empty": "Rien pour l'instant. Les espaces qui rejoignent l'annuaire apparaissent ici.",
+      "noMatches": "Rien dans l'espace extérieur ne correspond à votre recherche.",
+      "showMore": "Afficher plus",
+      "connectAndJoin": "Se connecter et rejoindre",
+      "connectAndRequest": "Se connecter et demander",
+      "closedBadge": "Fermé aux nouveaux comptes"
+    },
+    "connections": {
+      "title": "Connexions nécessitant votre attention",
+      "sessionExpired": "session expirée",
+      "unreachable": "injoignable",
+      "reconnect": "Se reconnecter",
+      "retry": "Réessayer"
+    },
+    "connect": {
+      "title": "Rejoindre {{name}}",
+      "intro": "Cet espace se trouve sur <host>{{host}}</host>. La connexion y crée votre identité, liée à votre compte sur <home>{{home}}</home>.",
+      "probing": "Contact de {{host}}…",
+      "connecting": "Connexion…",
+      "requested": "Votre demande pour rejoindre {{name}} a été envoyée."
+    },
+    "badges": {
+      "joined": "Rejoint",
+      "public": "Public",
+      "request": "Sur demande"
+    },
+    "noDescription": "Aucune description",
+    "memberCount_one": "{{count}} membre",
+    "memberCount_many": "{{count}} de membres",
+    "memberCount_other": "{{count}} membres",
+    "viewSpace": "Voir l'espace",
+    "join": "Rejoindre l'espace",
+    "joining": "Connexion à l'espace…",
+    "requestPending": "Demande en attente",
+    "requestMessagePlaceholder": "Pourquoi voulez-vous rejoindre cet espace ? (facultatif)",
+    "sendRequest": "Envoyer la demande",
+    "sendingRequest": "Envoi…",
+    "requestToJoin": "Demander à rejoindre",
+    "preview": {
+      "join": "Rejoindre",
+      "joining": "Connexion…",
+      "pending": "En attente",
+      "request": "Demander",
+      "sending": "Envoi…"
+    }
+  },
+  "settings": {
+    "title": "Paramètres de l'espace",
+    "backAria": "Retour au menu des paramètres de l'espace",
+    "nav": {
+      "general": "Général",
+      "management": "Gestion",
+      "tabs": {
+        "overview": "Vue d'ensemble",
+        "discovery": "Découverte",
+        "roles": "Rôles",
+        "bans": "Bannissements"
+      }
+    },
+    "discardChanges": "Abandonner",
+    "overview": {
+      "identity": "Identité de l'espace",
+      "iconLabel": "Icône de l'espace",
+      "iconAlt": "Icône de l'espace",
+      "colorLabel": "Couleur de l'icône",
+      "bannerLabel": "Bannière de l'espace",
+      "bannerAlt": "Bannière de l'espace",
+      "uploadBanner": "Téléverser une bannière (16:9)",
+      "removeBanner": "Supprimer la bannière",
+      "nameLabel": "Nom de l'espace",
+      "iconUploadFailed": "Impossible de téléverser l'icône",
+      "bannerUploadFailed": "Impossible de téléverser la bannière",
+      "cropIconTitle": "Recadrer l'icône de l'espace",
+      "cropBannerTitle": "Recadrer la bannière de l'espace",
+      "transfer": {
+        "description": "Transférez la propriété à un autre membre. Vous deviendrez un membre ordinaire.",
+        "prompt": "Transférer la propriété à <strong>{{name}}</strong> ?",
+        "button": "Transférer la propriété",
+        "confirm": "Transférer",
+        "transferring": "Transfert…",
+        "success": "Propriété transférée à {{name}}",
+        "failed": "Impossible de transférer la propriété"
+      },
+      "delete": {
+        "description": "Supprimer définitivement cet espace et toutes ses données. Cette action est irréversible.",
+        "button": "Supprimer l'espace",
+        "confirmAgain": "Cliquez à nouveau pour confirmer la suppression",
+        "failed": "Impossible de supprimer l'espace"
+      }
+    },
+    "discovery": {
+      "title": "Découverte",
+      "disabledNotice": "La découverte d'espaces est désactivée par l'administrateur de l'instance. Modifier la visibilité n'aura aucun effet tant que la découverte n'est pas réactivée.",
+      "visibility": {
+        "label": "Visibilité",
+        "hint": "Contrôlez qui peut découvrir et rejoindre cet espace.",
+        "options": {
+          "private": {
+            "label": "Privé",
+            "description": "Seules les personnes disposant d'un lien d'invitation peuvent rejoindre l'espace"
+          },
+          "request": {
+            "label": "Sur demande",
+            "description": "Visible dans Explorer ; les personnes peuvent demander à le rejoindre"
+          },
+          "public": {
+            "label": "Public",
+            "description": "Visible dans Explorer ; tout le monde peut le rejoindre immédiatement"
+          }
+        }
+      },
+      "directory": {
+        "label": "Répertorier dans l'annuaire global de Backspace",
+        "hint": "Afficher cet espace dans l'espace extérieur de chaque instance Backspace.",
+        "notConfigured": "Cette instance n'est pas configurée pour joindre un annuaire : répertorier cet espace ne le ferait apparaître dans aucun.",
+        "adminOff": "L'administrateur de votre instance doit autoriser le référencement global.",
+        "adminOffSelf": "Le référencement global n'est pas autorisé sur cette instance.",
+        "adminOffSelfAction": "L'activer",
+        "adminOffSelfIntro": "Cela autorise le référencement global pour toute l'instance : les espaces d'ici deviennent visibles dans Explorer et l'instance commence à se signaler à l'annuaire public.",
+        "privateSpace": "Définissez d'abord la visibilité sur public ou sur demande.",
+        "disclosure": "Le référencement rend publics : le nom, la description, l'icône, la bannière et le nombre de membres de l'espace, ainsi que l'adresse de cette instance. Les personnes qui parcourent l'annuaire chargent l'icône et la bannière depuis cette instance."
+      },
+      "description": {
+        "label": "Description",
+        "hint": "Un court résumé affiché sur la page Explorer.",
+        "placeholder": "Une courte description pour la page Explorer…",
+        "counter": "{{length}}/{{max}}"
+      },
+      "requests": {
+        "title": "Demandes d'adhésion en attente",
+        "empty": "Aucune demande d'adhésion en attente",
+        "actionFailed": "Échec de l'action"
+      }
+    },
+    "members": {
+      "description": "Gérez les membres de cet espace. Cliquez sur un membre pour modifier ses rôles.",
+      "listHeading": "Membres ({{total}})",
+      "owner": "Propriétaire",
+      "noRoles": "Aucun rôle",
+      "ban": "Bannir",
+      "kick": "Expulser",
+      "confirm": {
+        "banTitle": "Bannir {{name}}",
+        "kickTitle": "Expulser {{name}}",
+        "banDescription": "Cette personne sera bannie définitivement de cet espace jusqu'à la levée du bannissement.",
+        "kickDescription": "Cette personne pourra rejoindre l'espace à nouveau avec un lien d'invitation."
+      },
+      "updateRolesFailed": "Impossible de mettre à jour les rôles",
+      "kickFailed": "Impossible d'expulser le membre",
+      "banFailed": "Impossible de bannir le membre",
+      "rolesAboveYou": "Les rôles égaux ou supérieurs à votre rôle le plus élevé sont verrouillés.",
+      "rolesUnheld": "Les rôles dont vous n'avez pas les permissions ne peuvent pas être attribués."
+    }
+  },
+  "bans": {
+    "title": "Bannissements",
+    "description": "Les utilisateurs bannis ne peuvent pas rejoindre cet espace tant que leur bannissement n'est pas levé.",
+    "loading": "Chargement des bannissements…",
+    "empty": "Aucun utilisateur banni",
+    "listHeading": "Bannissements ({{total}})",
+    "bannedBy": "Banni par {{moderator}} le {{date}}",
+    "bannedByWithReason": "Banni par {{moderator}} le {{date}} : {{reason}}",
+    "unban": "Lever le bannissement",
+    "loadFailed": "Impossible de charger les bannissements",
+    "unbanFailed": "Impossible de lever le bannissement de l'utilisateur"
+  },
+  "roles": {
+    "title": "Rôles",
+    "create": "Créer un rôle",
+    "creating": "Création…",
+    "listHeading": "Rôles",
+    "description": "Les rôles définissent les permissions des membres.",
+    "hierarchyHint": "Les rôles placés plus haut dans la liste sont prioritaires sur ceux qui se trouvent en dessous.",
+    "defaultName": "nouveau rôle",
+    "copyName": "Copie de {{name}}",
+    "backToList": "Retour aux rôles",
+    "created": "Rôle créé. Personnalisez-le ci-dessous.",
+    "aboveYou": "Ce rôle est égal ou supérieur à votre rôle le plus élevé. Vous pouvez le consulter, mais pas le modifier.",
+    "reorder": {
+      "handle": "Déplacer {{name}}",
+      "handleHint": "Faites glisser, ou utilisez les flèches haut et bas",
+      "up": "Monter {{name}}",
+      "down": "Descendre {{name}}",
+      "locked": "{{name}} est égal ou supérieur à votre rôle le plus élevé",
+      "moved": "{{name}} déplacé en position {{position}} sur {{total}}"
+    },
+    "identity": "Identité",
+    "nameLabel": "Nom du rôle",
+    "colorLabel": "Couleur du rôle",
+    "nameEmpty": "Le nom du rôle ne peut pas être vide",
+    "nameDuplicate": "Un rôle portant ce nom existe déjà",
+    "groups": {
+      "general": "Général",
+      "text": "Textuel",
+      "voice": "Vocal"
+    },
+    "saved": "Rôle enregistré",
+    "copy": "Copier le rôle",
+    "copying": "Copie…",
+    "delete": "Supprimer le rôle",
+    "deleting": "Suppression…",
+    "confirmDelete": "Confirmer ?",
+    "createFailed": "Impossible de créer le rôle",
+    "saveFailed": "Impossible d'enregistrer le rôle",
+    "deleteFailed": "Impossible de supprimer le rôle",
+    "copyFailed": "Impossible de copier le rôle",
+    "unheldLocked": "Vous ne pouvez activer que les permissions que vous possédez vous-même. Les autres sont verrouillées.",
+    "unheldPermission": "Vous n'avez pas cette permission",
+    "copyUnheld": "Ce rôle comporte des permissions que vous n'avez pas, vous ne pouvez donc pas le copier.",
+    "copyDeleteUnheld": "Ce rôle comporte des permissions que vous n'avez pas, vous ne pouvez donc ni le copier ni le supprimer."
+  },
+  "memberRoles": {
+    "title": "Modifier les rôles de {{name}}",
+    "viewProfile": "Voir le profil",
+    "affectsAll": "Les modifications de permissions s'appliquent à tous les membres ayant ce rôle.",
+    "selectRole": "Sélectionnez un rôle pour modifier ses permissions.",
+    "saved": "Modifications enregistrées"
+  },
+  "permissions": {
+    "title": "Permissions",
+    "names": {
+      "administrator": "Administrateur",
+      "viewChannel": "Voir les salons",
+      "manageChannels": "Gérer les salons",
+      "manageRoles": "Gérer les rôles",
+      "manageSpace": "Gérer l'espace",
+      "createInvite": "Créer une invitation",
+      "kickMembers": "Expulser des membres",
+      "banMembers": "Bannir des membres",
+      "sendMessages": "Envoyer des messages",
+      "manageMessages": "Gérer les messages",
+      "attachFiles": "Joindre des fichiers",
+      "readMessageHistory": "Voir l'historique des messages",
+      "addReactions": "Ajouter des réactions",
+      "connect": "Se connecter",
+      "speak": "Parler",
+      "muteMembers": "Couper le micro des membres",
+      "deafenMembers": "Couper le son des membres",
+      "moveMembers": "Déplacer des membres",
+      "stream": "Streamer",
+      "disconnectMembers": "Déconnecter des membres"
+    },
+    "tristate": {
+      "deny": "Refuser",
+      "neutral": "Neutre (hériter)",
+      "allow": "Autoriser"
+    },
+    "overrideCount_one": "{{count}} dérogation",
+    "overrideCount_many": "{{count}} de dérogations",
+    "overrideCount_other": "{{count}} dérogations",
+    "removeOverride": "Supprimer la dérogation",
+    "removeOverrideFor": "Supprimer la dérogation pour {{name}}",
+    "removeOverrideHint": "Sans elle, les permissions valables pour tout l'espace s'appliquent ici.",
+    "noRoleOverrides": "Aucune dérogation de rôle. Chaque rôle utilise ici ses permissions valables pour tout l'espace.",
+    "noMemberOverrides": "Aucune dérogation de membre.",
+    "roleOverrides": "Dérogations de rôle",
+    "memberOverrides": "Dérogations de membre",
+    "addRole": "Ajouter un rôle",
+    "addMember": "Ajouter un membre",
+    "noMoreRoles": "Aucun autre rôle à ajouter",
+    "loadFailed": "Impossible de charger les dérogations",
+    "saveFailed": "Impossible d'enregistrer les dérogations",
+    "partialFailure_one": "{{count}} dérogation n'a pas pu être enregistrée",
+    "partialFailure_many": "{{count}} de dérogations n'ont pas pu être enregistrées",
+    "partialFailure_other": "{{count}} dérogations n'ont pas pu être enregistrées",
+    "unheldLocked": "Vous ne pouvez activer que les permissions que vous possédez vous-même. Les autres sont verrouillées.",
+    "unheldPermission": "Vous n'avez pas cette permission",
+    "removeUnheld": "Cette dérogation définit des permissions que vous n'avez pas. Seule une personne qui les possède peut la supprimer.",
+    "removeUnheldShort": "Seule une personne ayant ces permissions peut la supprimer",
+    "aboveYouRole": "Ce rôle est égal ou supérieur à votre rôle le plus élevé. Vous pouvez consulter sa dérogation, mais pas la modifier ni la supprimer.",
+    "aboveYouMember": "Ce membre est de rang égal ou supérieur au vôtre. Vous pouvez consulter sa dérogation, mais pas la modifier ni la supprimer.",
+    "aboveYouShort": "Rang égal ou supérieur à votre rôle le plus élevé"
+  },
+  "sidebar": {
+    "directMessages": "Messages privés",
+    "addSpace": "Ajouter un espace",
+    "joinSpace": "Rejoindre un espace",
+    "exploreSpaces": "Explorer les espaces",
+    "folder": {
+      "tooltip_one": "Dossier ({{count}})",
+      "tooltip_many": "Dossier ({{count}})",
+      "tooltip_other": "Dossier ({{count}})",
+      "spaceCount_one": "{{count}} espace",
+      "spaceCount_many": "{{count}} d'espaces",
+      "spaceCount_other": "{{count}} espaces",
+      "unnamed": "Dossier sans nom",
+      "rename": "Renommer le dossier",
+      "color": "Couleur du dossier",
+      "create": "Créer un dossier",
+      "moveTo": "Déplacer vers un dossier",
+      "removeFrom": "Retirer du dossier",
+      "ungroup": "Dissocier",
+      "created": "Dossier créé",
+      "moved": "Déplacé dans le dossier",
+      "removed": "Retiré du dossier",
+      "ungrouped": "Dossier dissocié"
+    },
+    "space": {
+      "inviteCopied": "Lien d'invitation copié dans le presse-papiers",
+      "inviteFailed": "Impossible de générer l'invitation",
+      "transferOwnership": "Transférer la propriété",
+      "settings": "Paramètres de l'espace",
+      "leave": "Quitter l'espace",
+      "reconnecting": "Reconnexion à {{instance}}…",
+      "remoteInstance": "instance distante",
+      "leaveConfirm": {
+        "title": "Quitter l'espace",
+        "titleNamed": "Quitter {{name}}",
+        "description": "Voulez-vous vraiment quitter cet espace ? Il vous faudra une nouvelle invitation pour le rejoindre à nouveau."
+      },
+      "left": "Vous avez quitté l'espace",
+      "leaveFailed": "Impossible de quitter l'espace"
+    },
+    "dmList": {
+      "explore": "Explorer",
+      "newDm": "Nouveau message privé",
+      "empty": "Aucune conversation pour l'instant.",
+      "leaveGroup": "Quitter le groupe",
+      "leaveGroupConfirm": {
+        "title": "Quitter le MP de groupe",
+        "description": "Voulez-vous vraiment partir ? Vous ne pourrez pas revenir tant que quelqu'un ne vous aura pas ajouté à nouveau."
+      }
+    },
+    "userArea": {
+      "inputDevice": "Périphérique d'entrée",
+      "outputDevice": "Périphérique de sortie",
+      "inputDevices": "Périphériques d'entrée",
+      "outputDevices": "Périphériques de sortie",
+      "inputVolume": "Volume d'entrée",
+      "outputVolume": "Volume de sortie",
+      "systemDefault": "Par défaut du système",
+      "microphonePermission": "L'autorisation d'accès au microphone est nécessaire.",
+      "audioPermission": "L'autorisation d'accès à l'audio est nécessaire.",
+      "enable": "Activer",
+      "voiceSettings": "Paramètres vocaux",
+      "mute": "Couper le micro",
+      "unmute": "Réactiver le micro",
+      "deafen": "Couper le son",
+      "undeafen": "Réactiver le son",
+      "spaceMuted": "Micro coupé par l'espace",
+      "spaceDeafened": "Son coupé par l'espace",
+      "permissionMuted": "Muet (pas la permission de parler)"
+    }
+  },
+  "channels": {
+    "loading": "Chargement des salons",
+    "create": "Créer un salon",
+    "createCategory": "Créer une catégorie",
+    "settings": "Paramètres du salon",
+    "categorySettings": "Paramètres de la catégorie",
+    "delete": "Supprimer le salon",
+    "deleteCategory": "Supprimer la catégorie",
+    "emptyCategory": "Aucun salon",
+    "empty": "Aucun salon pour l'instant.",
+    "deleteConfirm": {
+      "title": "Supprimer le salon",
+      "description": "Êtes-vous sûr ? Cela supprimera définitivement le salon et tous ses messages."
+    },
+    "deleteCategoryConfirm": {
+      "title": "Supprimer la catégorie",
+      "description": "Voulez-vous vraiment supprimer cette catégorie ? Les salons qu'elle contient seront déplacés hors catégorie — aucun salon ne sera supprimé."
+    },
+    "deleted": "Salon supprimé",
+    "deleteFailed": "Impossible de supprimer le salon",
+    "categoryDeleted": "Catégorie supprimée",
+    "categoryDeleteFailed": "Impossible de supprimer la catégorie"
+  },
+  "members": {
+    "titleWithCount_one": "Membres — {{count}}",
+    "titleWithCount_many": "Membres — {{count}}",
+    "titleWithCount_other": "Membres — {{count}}",
+    "loading": "Chargement des membres",
+    "groups": {
+      "owner": "Propriétaire"
+    }
+  },
+  "mobile": {
+    "addSheet": {
+      "createSpace": "Créer un espace",
+      "joinSpace": "Rejoindre un espace",
+      "exploreSpaces": "Explorer les espaces"
+    },
+    "muteUser": "Rendre muet"
+  },
+  "main": {
+    "selectChannel": "Sélectionnez un salon",
+    "selectChannelHint": "Sélectionnez un salon textuel ou vocal pour commencer",
+    "notificationSettings": "Paramètres de notification",
+    "voice": {
+      "connectionFailed": "Échec de la connexion",
+      "connected": "Connecté",
+      "connecting": "Connexion…",
+      "participants_one": "{{count}} connecté",
+      "participants_many": "{{count}} de connectés",
+      "participants_other": "{{count}} connectés",
+      "inCall_one": "{{count}} en appel",
+      "inCall_many": "{{count}} d'en appel",
+      "inCall_other": "{{count}} en appel",
+      "empty": "Personne n'est actuellement dans ce salon vocal.",
+      "join": "Rejoindre le vocal"
+    },
+    "dm": {
+      "fallbackName": "Message privé",
+      "composerPlaceholder": "Envoyer un message à {{target}}",
+      "calling": "Appel de {{name}}…",
+      "groupSettings": "Paramètres du groupe",
+      "openGroupSettings": "Ouvrir les paramètres du groupe",
+      "memberCount_one": "({{count}} membre)",
+      "memberCount_many": "({{count}} de membres)",
+      "memberCount_other": "({{count}} membres)",
+      "startVoiceCall": "Démarrer un appel vocal",
+      "startVideoCall": "Démarrer un appel vidéo",
+      "addFriends": "Ajouter des amis au MP"
+    }
+  },
+  "ownership": {
+    "title": "Transférer la propriété",
+    "description": "Choisissez un membre qui deviendra le nouveau propriétaire de <name>{{name}}</name>",
+    "confirmQuestion": "Transférer la propriété de <name>{{space}}</name> à <name>{{member}}</name> ?",
+    "regularMember": "Vous deviendrez un membre ordinaire.",
+    "transferring": "Transfert…",
+    "confirm": "Transférer",
+    "loading": "Chargement des membres…",
+    "success": "Propriété transférée à {{name}}",
+    "failed": "Impossible de transférer la propriété"
+  }
+}

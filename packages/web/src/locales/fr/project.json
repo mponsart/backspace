@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "label": "Backspace",
+    "updatedDot": "Backspace a été mis à jour"
+  },
+  "header": {
+    "title": "Backspace",
+    "tagline": "Une messagerie open source que vous pouvez héberger vous-même."
+  },
+  "whatsNew": {
+    "title": "Nouveautés",
+    "updated": "Mis à jour vers {{version}}",
+    "current": "Vous utilisez la version {{version}}",
+    "noVersion": "Notes de version de chaque version",
+    "action": "Lire les notes de version"
+  },
+  "community": {
+    "title": "Rejoignez la communauté Backspace",
+    "body": "Discutez avec les personnes qui développent Backspace, posez vos questions et partagez vos retours.",
+    "join": "Rejoindre",
+    "open": "Ouvrir",
+    "pending": "Demande envoyée",
+    "retry": "Réessayer",
+    "unreachable": "Impossible de joindre l'instance de la communauté.",
+    "notListed": "L'espace de la communauté n'est pas disponible pour le moment."
+  },
+  "support": {
+    "title": "Soutenir le projet",
+    "body": "Aide à payer les licences développeur qui permettent de publier les applications Backspace sur les stores, ainsi que les autres frais du projet.",
+    "action": "Soutenir sur Ko-fi"
+  },
+  "insights": {
+    "title": "Statistiques",
+    "body": "Des chiffres publics sur les téléchargements, les instances et l'activité.",
+    "action": "Ouvrir les statistiques"
+  },
+  "report": {
+    "title": "Signaler un bug ou proposer une fonctionnalité",
+    "body": "Votre version et votre navigateur sont renseignés pour vous.",
+    "bug": "Signaler un bug",
+    "feature": "Proposer une fonctionnalité"
+  },
+  "host": {
+    "title": "Hébergez votre propre instance",
+    "body": "Faites tourner Backspace sur votre propre serveur et invitez qui vous voulez.",
+    "action": "Lire le guide d'installation"
+  },
+  "desktop": {
+    "title": "Obtenir l'application de bureau",
+    "body": "Appuyer pour parler, raccourcis globaux et statut d'activité.",
+    "action": "Télécharger"
+  },
+  "instance": {
+    "title": "Cette instance"
+  },
+  "footer": {
+    "license": "Licence (AGPL-3.0)",
+    "security": "Signaler un problème de sécurité",
+    "contributors": "Contributeurs",
+    "source": "Code source sur GitHub"
+  }
+}

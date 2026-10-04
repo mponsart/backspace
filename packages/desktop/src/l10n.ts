@@ -16,9 +16,9 @@ import { app } from 'electron';
 import fs from 'fs';
 import path from 'path';
 
-export type DesktopLanguage = 'en' | 'ru' | 'de' | 'zh';
+export type DesktopLanguage = 'en' | 'ru' | 'de' | 'fr' | 'zh';
 
-const DESKTOP_LANGUAGES: readonly DesktopLanguage[] = ['en', 'ru', 'de', 'zh'];
+const DESKTOP_LANGUAGES: readonly DesktopLanguage[] = ['en', 'ru', 'de', 'fr', 'zh'];
 
 const en = {
   'tray.show': 'Show Backspace',
@@ -81,6 +81,25 @@ const de: Catalog = {
   'update.download': 'Update herunterladen…',
 };
 
+const fr: Catalog = {
+  'tray.show': 'Afficher Backspace',
+  'tray.hide': 'Masquer',
+  'tray.changeInstance': "Changer d'instance",
+  'tray.sourceCode': 'Code source (AGPL)',
+  'tray.quit': 'Quitter',
+  'menu.edit': 'Édition',
+  'menu.window': 'Fenêtre',
+  'update.check': 'Rechercher des mises à jour…',
+  'update.checkAfterFailure': 'Rechercher des mises à jour… (la dernière tentative a échoué)',
+  'update.checking': 'Recherche de mises à jour…',
+  'update.downloading': 'Téléchargement de la mise à jour…',
+  'update.ready': 'Mise à jour prête',
+  'update.available': 'Mise à jour disponible',
+  'update.restartToInstall': 'Redémarrer pour installer la mise à jour',
+  'update.downloadVersion': 'Télécharger Backspace {version}…',
+  'update.download': 'Télécharger la mise à jour…',
+};
+
 const zh: Catalog = {
   'tray.show': '显示 Backspace',
   'tray.hide': '隐藏',
@@ -100,7 +119,7 @@ const zh: Catalog = {
   'update.download': '下载更新…',
 };
 
-export const DESKTOP_CATALOGS: Record<DesktopLanguage, Catalog> = { en, ru, de, zh };
+export const DESKTOP_CATALOGS: Record<DesktopLanguage, Catalog> = { en, ru, de, fr, zh };
 
 export function isDesktopLanguage(value: unknown): value is DesktopLanguage {
   return typeof value === 'string' && (DESKTOP_LANGUAGES as readonly string[]).includes(value);
