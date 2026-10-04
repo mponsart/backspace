@@ -1,0 +1,483 @@
+{
+  "general": {
+    "title": "Général",
+    "description": "Configurez votre instance Backspace. Ces paramètres concernent tous les utilisateurs.",
+    "instanceName": {
+      "label": "Nom de l'instance",
+      "description": "Le nom affiché sur la page de connexion et aux instances fédérées.",
+      "counter": "{{length}}/{{max}}"
+    },
+    "discovery": {
+      "label": "Découverte d'espaces",
+      "description": "Jusqu'où les espaces de cette instance peuvent être trouvés.",
+      "levels": {
+        "invite": {
+          "label": "Sur invitation uniquement",
+          "description": "Les espaces d'ici ne sont répertoriés nulle part. Les liens d'invitation fonctionnent toujours."
+        },
+        "local": {
+          "label": "Découverte locale d'espaces",
+          "description": "Les espaces apparaissent dans Explorer pour les personnes de cette instance et des instances qui lui sont connectées."
+        },
+        "global": {
+          "label": "Autoriser le référencement global",
+          "description": "Chaque espace peut alors être répertorié manuellement dans l'annuaire global de Backspace depuis ses propres paramètres de découverte."
+        }
+      },
+      "unconfigured": "Cette instance n'est pas configurée pour joindre un annuaire : rien ici ne peut donc être référencé globalement."
+    },
+    "directory": {
+      "listingHint": "Activer cette option ne répertorie aucun espace à lui seul. Chaque espace doit encore activer « {{setting}} » dans ses paramètres de découverte.",
+      "showMeWhere": "Me montrer où",
+      "saveAndShowMeWhere": "Enregistrer et me montrer où",
+      "listedCount_one": "{{count}} espace répertorié",
+      "listedCount_many": "{{count}} d'espaces répertoriés",
+      "listedCount_other": "{{count}} espaces répertoriés",
+      "registrationClosed": "Les nouveaux comptes venant d'autres instances sont fermés : les espaces répertoriés seront donc indiqués comme fermés aux nouveaux comptes.",
+      "openFederatedRegistration": "Ouvrir les comptes fédérés",
+      "disclosure": "Pour chaque espace répertorié, cela rend publics : son nom, sa description, son icône, sa bannière, son nombre de membres et l'adresse de cette instance. Les personnes qui parcourent l'annuaire chargent l'icône et la bannière depuis cette instance.",
+      "status": {
+        "never": "Jamais signalée",
+        "lastPing": "Dernier signalement le {{date}}",
+        "lastError": "La dernière tentative a échoué ({{status}})"
+      },
+      "reasons": {
+        "unreachable": "l'annuaire n'a pas pu joindre cette instance",
+        "status": "cette instance a répondu par une erreur",
+        "invalid": "cette instance a servi un document invalide",
+        "origin-mismatch": "cette instance indique une adresse différente de celle utilisée pour la joindre",
+        "origin": "l'annuaire a refusé l'adresse de cette instance ; ce doit être un domaine https sans port (définissez DOMAIN ou PUBLIC_ORIGIN)",
+        "network": "cette instance n'a pas pu joindre l'annuaire",
+        "timeout": "l'annuaire n'a pas répondu à temps"
+      }
+    },
+    "browse": {
+      "toggleLabel": "Afficher les espaces globaux dans Explorer",
+      "toggleDescription": "Les personnes de cette instance voient les espaces des autres instances dans l'espace extérieur. Leurs navigateurs chargent les icônes et les bannières de ces espaces depuis les instances qui les hébergent.",
+      "unavailable": "Cette instance n'est pas configurée pour joindre un annuaire : il n'y a donc rien à afficher."
+    },
+    "supportCard": {
+      "label": "Page Backspace",
+      "toggleLabel": "Afficher la carte Soutien",
+      "toggleDescription": "Affiche sur la page Backspace une carte qui renvoie vers la page Ko-fi du projet. La désactiver ne masque que cette carte."
+    },
+    "gif": {
+      "label": "Recherche de GIF",
+      "description": "Activez la recherche de GIF propulsée par Klipy. Obtenez une clé d'API gratuite sur le portail développeur de Klipy.",
+      "placeholderSaved": "Clé enregistrée — saisissez une nouvelle clé pour la remplacer",
+      "placeholderKey": "Clé d'API Klipy",
+      "enabled": "Activée",
+      "notConfigured": "Non configurée",
+      "clearKey": "Effacer la clé"
+    }
+  },
+  "registration": {
+    "title": "Inscription",
+    "description": "Contrôlez qui peut créer des comptes sur cette instance. L'inscription publique concerne les inscriptions locales ; l'inscription fédérée concerne les utilisateurs d'instances pairées qui créent un compte ici.",
+    "public": {
+      "label": "Inscription publique",
+      "toggleLabel": "Autoriser les nouveaux comptes locaux",
+      "toggleDescription": "N'importe qui peut créer un compte local depuis la page d'inscription. Lorsque cette option est désactivée, seuls les liens d'invitation permettent de créer de nouveaux comptes locaux."
+    },
+    "federated": {
+      "label": "Inscription fédérée",
+      "toggleLabel": "Autoriser les nouveaux comptes fédérés",
+      "toggleDescription": "Les utilisateurs d'autres instances peuvent créer ici un compte fédéré depuis leurs paramètres de connexions. Les comptes fédérés existants peuvent toujours se connecter, quel que soit ce paramètre."
+    },
+    "saved": "Paramètres d'inscription enregistrés",
+    "saveFailed": "Impossible de mettre à jour les paramètres d'inscription"
+  },
+  "invites": {
+    "label": "Liens d'invitation",
+    "create": "+ Créer un lien",
+    "tabs": {
+      "active": "Actifs",
+      "archived": "Archivés"
+    },
+    "loadFailed": "Impossible de charger les invitations",
+    "emptyActive": "Aucun lien d'invitation actif.",
+    "emptyArchived": "Aucun lien d'invitation archivé.",
+    "noMatch": "Aucune invitation ne correspond au filtre actuel.",
+    "filter": {
+      "status": "Statut",
+      "sort": {
+        "recent": "Plus récentes",
+        "oldest": "Plus anciennes",
+        "name": "Nom (A–Z)",
+        "mostUsed": "Plus utilisées",
+        "expiringSoonest": "Expirant bientôt"
+      }
+    },
+    "status": {
+      "active": "Active",
+      "expired": "Expirée",
+      "exhausted": "Épuisée",
+      "revoked": "Révoquée"
+    },
+    "expiry": {
+      "preset": {
+        "hour1": "1 heure",
+        "hours24": "24 heures",
+        "days7": "7 jours",
+        "days30": "30 jours",
+        "custom": "Personnalisée…"
+      },
+      "keepCurrent": "Conserver l'actuelle",
+      "invalidFuture": "Choisissez une date et une heure futures",
+      "invalidSelection": "Choix d'expiration invalide",
+      "revokedOn": "Révoquée {{date}}",
+      "expiredOn": "Expirée {{date}}",
+      "exhausted": "Épuisée",
+      "noExpiration": "Sans expiration",
+      "inDays_one": "Expire dans {{count}} jour",
+      "inDays_many": "Expire dans {{count}} de jours",
+      "inDays_other": "Expire dans {{count}} jours",
+      "inHours_one": "Expire dans {{count}} heure",
+      "inHours_many": "Expire dans {{count}} d'heures",
+      "inHours_other": "Expire dans {{count}} heures"
+    },
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "p. ex. Premier groupe d'amis",
+      "maxUses": "Utilisations max.",
+      "unlimited": "Illimitées",
+      "uses": "utilisations",
+      "expires": "Expiration",
+      "nameLength": "Le nom doit contenir de 1 à 64 caractères",
+      "maxUsesInteger": "Le nombre maximal d'utilisations doit être un entier positif"
+    },
+    "createModal": {
+      "title": "Créer un lien d'invitation",
+      "description": "Générez un lien partageable qui permet aux personnes de s'inscrire sur cette instance. Vous définirez combien de fois il peut être utilisé et quand il expire.",
+      "submit": "Créer le lien",
+      "submitting": "Création…",
+      "createdCopied": "Lien créé. Copié dans le presse-papiers.",
+      "createdManual": "Lien créé. Copiez-le manuellement depuis la ligne.",
+      "failed": "Impossible de créer l'invitation : {{message}}"
+    },
+    "editModal": {
+      "title": "Modifier « {{name}} »",
+      "description": "Ajustez les limites de ce lien d'invitation. L'URL ne change pas : toute personne qui la possède déjà peut encore l'utiliser sous les nouvelles contraintes.",
+      "used": "({{used}} utilisation(s))",
+      "maxUsesBelowUsed": "Le nombre maximal d'utilisations ne peut pas être inférieur au nombre d'utilisations actuel ({{used}})",
+      "noChanges": "Aucune modification à enregistrer",
+      "updated": "Invitation mise à jour",
+      "failed": "Impossible de mettre à jour l'invitation : {{message}}",
+      "submit": "Enregistrer les modifications",
+      "submitting": "Enregistrement…"
+    },
+    "reinstateModal": {
+      "title": "Rétablir « {{name}} »",
+      "descriptionRevoked": "Cette invitation a été révoquée. La rétablir génère un nouveau lien avec une URL différente — l'ancienne URL reste inactive.",
+      "descriptionLapsed": "Cette invitation est arrivée à échéance. La rétablir réactive la même URL — toute personne qui l'avait enregistrée pourra de nouveau l'utiliser.",
+      "newLinkWarning": "Un nouveau lien sera généré. Les personnes qui avaient l'ancienne URL ne pourront plus l'utiliser.",
+      "maxUsesMeta": "(actuel : {{max}}, utilisé : {{used}})",
+      "maxUsesMin": "Le nombre maximal d'utilisations doit être au moins de {{min}} (utilisations actuelles : {{used}})",
+      "submit": "Rétablir",
+      "submitNewLink": "Rétablir avec un nouveau lien",
+      "submitting": "Rétablissement…",
+      "doneCopied": "Rétablie avec un nouveau lien. Copié dans le presse-papiers.",
+      "doneManual": "Rétablie avec un nouveau lien. Copiez-le manuellement depuis la ligne.",
+      "doneSameLink": "Rétablie. Le même lien est de nouveau actif.",
+      "failed": "Impossible de rétablir : {{message}}"
+    },
+    "redemptions": {
+      "title": "Utilisations de « {{name}} »",
+      "description": "Les utilisateurs qui se sont inscrits avec ce lien d'invitation, dans l'ordre de leur inscription.",
+      "revokedNotice": "Cette invitation a été révoquée. Les utilisations ci-dessous correspondent aux utilisateurs inscrits avant la révocation.",
+      "revokedNoticeDated": "Cette invitation a été révoquée {{date}}. Les utilisations ci-dessous correspondent aux utilisateurs inscrits avant la révocation.",
+      "usesOfMax_one": "{{count}} utilisation sur {{max}}",
+      "usesOfMax_many": "{{count}} d'utilisations sur {{max}}",
+      "usesOfMax_other": "{{count}} utilisations sur {{max}}",
+      "uses_one": "{{count}} utilisation",
+      "uses_many": "{{count}} d'utilisations",
+      "uses_other": "{{count}} utilisations",
+      "loadFailed": "Impossible de charger les utilisations",
+      "loadFailedInline": "Impossible de charger les utilisations.",
+      "empty": "Aucune utilisation pour l'instant.",
+      "now": "(maintenant {{name}})",
+      "deletedUser": "Utilisateur supprimé"
+    },
+    "row": {
+      "usage": "{{usage}} utilisations",
+      "createdBy": "Créée par {{name}}",
+      "unknownCreator": "Inconnu",
+      "subtitleActive": "{{usage}} · {{expiry}} · {{creator}}",
+      "subtitleArchived": "{{usage}} · {{expiry}} · {{when}}",
+      "used": "Utilisée",
+      "expires": "Expire",
+      "expiredAt": "Expirée le",
+      "revokedAt": "Révoquée le",
+      "exhausted": "Épuisée",
+      "created": "Créée",
+      "createdByLabel": "Créée par",
+      "token": "Token",
+      "lastRedeemed": "Dernière utilisation",
+      "copyLink": "Copier le lien",
+      "revoke": "Révoquer",
+      "viewRedemptions": "Voir les utilisations",
+      "reinstate": "Rétablir",
+      "deletePermanently": "Supprimer définitivement",
+      "copied": "Lien d'invitation copié",
+      "copyFailed": "Impossible de copier le lien",
+      "revoked": "Invitation révoquée",
+      "revokeFailed": "Impossible de révoquer : {{message}}",
+      "deleted": "Invitation supprimée",
+      "deleteFailed": "Impossible de supprimer : {{message}}",
+      "revokeDialog": {
+        "title": "Révoquer « {{name}} » ?",
+        "description": "Le lien cesse de fonctionner immédiatement. Toute personne qui possède l'URL ne peut plus l'utiliser.<br/><br/>Si vous changez d'avis plus tard, <strong>Rétablir</strong> émet un nouveau lien sous cette entrée — l'URL d'origine reste inactive.",
+        "confirm": "Révoquer le lien"
+      },
+      "deleteDialog": {
+        "title": "Supprimer « {{name}} » définitivement ?",
+        "description": "Cette action est irréversible. L'historique des utilisations de ce lien sera également supprimé. Si vous voulez seulement que le lien cesse de fonctionner, utilisez plutôt <strong>Révoquer</strong> — cela conserve l'historique des utilisations.",
+        "confirm": "Supprimer définitivement"
+      }
+    }
+  },
+  "storage": {
+    "title": "Stockage",
+    "description": "Surveillez l'utilisation du disque et nettoyez les fichiers orphelins laissés par des contenus supprimés ou par des avatars et bannières remplacés.",
+    "loading": "Chargement des statistiques de stockage…",
+    "loadFailed": "Impossible de charger les statistiques de stockage",
+    "refresh": "Actualiser les statistiques",
+    "overview": {
+      "label": "Vue d'ensemble du stockage",
+      "totalFiles": "Nombre total de fichiers",
+      "referenced": "Référencés",
+      "orphanedFiles": "Fichiers orphelins",
+      "unlinkedUploads": "Téléversements non liés",
+      "danglingRecords": "Enregistrements orphelins",
+      "staleUploads": "Téléversements périmés"
+    },
+    "breakdown": {
+      "label": "Répartition par type de fichier",
+      "entry_one": "{{count}} fichier — {{size}}",
+      "entry_many": "{{count}} de fichiers — {{size}}",
+      "entry_other": "{{count}} fichiers — {{size}}"
+    },
+    "uploadLimit": {
+      "label": "Limite de téléversement",
+      "maxFileSize": "Taille maximale d'un fichier",
+      "saved": "Limite de téléversement définie à {{limit}}",
+      "saveFailed": "Impossible de mettre à jour la limite de téléversement"
+    },
+    "cleanup": {
+      "label": "Nettoyage",
+      "nothingFound": "Aucun fichier orphelin, téléversement périmé ou enregistrement orphelin trouvé.",
+      "preview": "Prévisualiser le nettoyage",
+      "run": "Nettoyer maintenant",
+      "running": "Nettoyage…",
+      "previewResult": "Aperçu — aucun fichier supprimé",
+      "complete": "Nettoyage terminé",
+      "orphanedFiles_one": "{{count}} fichier orphelin ({{size}})",
+      "orphanedFiles_many": "{{count}} de fichiers orphelins ({{size}})",
+      "orphanedFiles_other": "{{count}} fichiers orphelins ({{size}})",
+      "staleRecords_one": ", {{count}} enregistrement de téléversement périmé",
+      "staleRecords_many": ", {{count}} d'enregistrements de téléversement périmés",
+      "staleRecords_other": ", {{count}} enregistrements de téléversement périmés",
+      "errors_one": "{{count}} erreur : {{first}}",
+      "errors_many": "{{count}} d'erreurs : {{first}}",
+      "errors_other": "{{count}} erreurs : {{first}}",
+      "cleanedToast_one": "{{count}} fichier nettoyé ({{size}})",
+      "cleanedToast_many": "{{count}} de fichiers nettoyés ({{size}})",
+      "cleanedToast_other": "{{count}} fichiers nettoyés ({{size}})",
+      "failed": "Échec du nettoyage"
+    },
+    "stale": {
+      "label": "Téléversements périmés",
+      "description": "Sessions de téléversement tus abandonnées dans <code>.tus/</code> (mises en pause ou plantées sans DELETE). L'expiration automatique s'exécute toutes les 24 heures ; ceci vous permet de les balayer à l'avance.",
+      "maxAge": "Âge maximal (heures)",
+      "sessionFiles_one": "{{count}} fichier de session ({{size}})",
+      "sessionFiles_many": "{{count}} de fichiers de session ({{size}})",
+      "sessionFiles_other": "{{count}} fichiers de session ({{size}})",
+      "cleanedToast_one": "{{count}} session de téléversement périmée nettoyée ({{size}})",
+      "cleanedToast_many": "{{count}} de sessions de téléversement périmées nettoyées ({{size}})",
+      "cleanedToast_other": "{{count}} sessions de téléversement périmées nettoyées ({{size}})",
+      "failed": "Échec du nettoyage des téléversements périmés"
+    },
+    "media": {
+      "label": "Conservation des médias",
+      "olderThan": "Supprimer les médias de chat de plus de",
+      "days": "jours",
+      "run": "Supprimer maintenant",
+      "running": "Suppression…",
+      "files_one": "{{count}} fichier ({{size}})",
+      "files_many": "{{count}} de fichiers ({{size}})",
+      "files_other": "{{count}} fichiers ({{size}})",
+      "deletedToast_one": "{{count}} fichier supprimé ({{size}})",
+      "deletedToast_many": "{{count}} de fichiers supprimés ({{size}})",
+      "deletedToast_other": "{{count}} fichiers supprimés ({{size}})",
+      "failed": "Échec du nettoyage des médias"
+    }
+  },
+  "streaming": {
+    "title": "Streaming",
+    "description": "Ces limites s'appliquent à tous les utilisateurs de cette instance. Les utilisateurs peuvent choisir des valeurs comprises dans ces bornes.",
+    "units": {
+      "fps": "{{value}} i/s",
+      "kbpsLabel": "kbit/s"
+    },
+    "bandwidth": {
+      "label": "Bande passante",
+      "description": "Bornes minimale et maximale du débit, et pas du curseur de qualité.",
+      "customBitrate": {
+        "label": "Autoriser un débit personnalisé",
+        "description": "Permettre aux utilisateurs de définir leur propre débit au lieu d'utiliser les valeurs par défaut de la matrice"
+      },
+      "range": "Plage de débit",
+      "min": "Min",
+      "max": "Max",
+      "step": "Pas du curseur"
+    },
+    "quality": {
+      "label": "Qualité",
+      "description": "Options de résolution et de fréquence d'images disponibles pour le partage d'écran.",
+      "resolutions": "Résolutions autorisées",
+      "framerates": "Fréquences d'images autorisées"
+    },
+    "highEndWarning": {
+      "title": "Paramètres haute performance activés.",
+      "description": "Streamer au-delà de 1080p ou de 60 i/s exige une puissance d'encodage CPU/GPU importante côté client et peut saturer la bande passante du serveur, en particulier lorsque les streams passent par TURN. Les configurations haut de gamme (p. ex. 4K à 120 i/s) peuvent exiger jusqu'à 45 Mbit/s par stream actif. Assurez-vous que votre infrastructure peut supporter cette charge avant d'activer ces options pour tous les utilisateurs."
+    },
+    "matrix": {
+      "label": "Matrice de débits",
+      "description": "Débits par défaut selon la résolution et la fréquence d'images. Modifiez des cellules individuellement ou mettez toutes les valeurs à l'échelle d'un coup.",
+      "scaleAll": "Tout mettre à l'échelle",
+      "scaleHint": "Faites glisser pour mettre tous les débits à l'échelle. Ajustez ensuite les cellules une par une ci-dessous.",
+      "cellDefault": "Par défaut : {{value}} (cliquez sur × pour réinitialiser)",
+      "cellEdit": "Cliquez pour modifier",
+      "resetAll": "Tout réinitialiser aux valeurs par défaut"
+    },
+    "capWarning": {
+      "title": "Des valeurs de la matrice dépassent le plafond global.",
+      "description": "Certains débits dépassent votre maximum de {{max}}. Les streams utilisant ces combinaisons verront leur qualité réduite à votre plafond."
+    }
+  },
+  "updates": {
+    "title": "Mises à jour",
+    "badge": {
+      "settingsAriaLabel": "Paramètres, mise à jour de l'instance disponible",
+      "toast": "Backspace {{version}} est disponible pour cette instance",
+      "toastAction": "Voir"
+    },
+    "description": "Ce que fait tourner cette instance, et comment la faire avancer.",
+    "loading": "Chargement de l'état des mises à jour…",
+    "loadFailed": "Impossible de charger l'état des mises à jour.",
+    "copyFailed": "Impossible de copier. Sélectionnez la commande et copiez-la manuellement.",
+    "running": {
+      "label": "En cours d'exécution",
+      "commit": "commit {{commit}} · ",
+      "channel": {
+        "prebuilt": "image préconstruite",
+        "source": "compilée depuis les sources",
+        "unknown": "méthode d'installation non enregistrée"
+      }
+    },
+    "available": {
+      "label": "Disponible",
+      "version": "Backspace {{version}} est disponible",
+      "released": "Publiée le {{date}} · ",
+      "releaseNotes": "Notes de version",
+      "fromInstallDir": "Depuis votre répertoire d'installation :",
+      "scriptDescription": "Effectue un instantané de la base de données, récupère la nouvelle image et ne redémarre que le conteneur Backspace. Si la nouvelle version ne démarre pas correctement, ou démarre en exécutant encore l'ancien code, il remet la version que vous utilisez actuellement.",
+      "noScript": "Je n'ai pas update.sh",
+      "manualIntro": "update.sh est fourni à partir de la version 1.0.5. Sur un dépôt git, <code>git pull</code> le récupère. Sinon, exécutez les étapes à la main, après avoir effectué un instantané avec <code>./backup.sh</code>.",
+      "prebuiltInstall": "Installation avec image préconstruite :",
+      "sourceInstall": "Installation depuis les sources :",
+      "manualWarning": "Nommez explicitement le service <code>backspace</code> et ne passez pas <code>--remove-orphans</code>. Compose le suggérera si vous exécutez d'autres conteneurs dans ce projet, et il les supprimerait."
+    },
+    "upToDate": "Vous utilisez la dernière version.",
+    "disabled": {
+      "title": "La recherche de mises à jour est désactivée",
+      "description": "Cette instance ne contactera pas GitHub. Définissez <code>BACKSPACE_UPDATE_CHECK=true</code> dans votre <code>.env</code> pour autoriser la recherche, ou consultez vous-même la page des versions."
+    },
+    "rateLimited": {
+      "title": "GitHub a limité le débit de la recherche",
+      "description": "Cela n'indique pas si une mise à jour existe. Réessayez plus tard."
+    },
+    "unreachable": {
+      "title": "Impossible de rechercher des mises à jour",
+      "description": "GitHub est injoignable, cela n'indique donc pas si une mise à jour existe. Votre instance n'est pas affectée."
+    },
+    "lastChecked": "Dernière vérification {{when}}",
+    "noLookups": "Aucune recherche n'est effectuée",
+    "checkAgain": "Vérifier à nouveau",
+    "checking": "Vérification…"
+  },
+  "users": {
+    "title": "Utilisateurs",
+    "description": "Consultez et gérez les comptes utilisateurs de cette instance.",
+    "searchPlaceholder": "Rechercher des utilisateurs…",
+    "loading": "Chargement des utilisateurs…",
+    "loadFailed": "Impossible de charger les utilisateurs",
+    "empty": "Aucun utilisateur trouvé",
+    "filters": {
+      "allInstances": "Toutes les instances",
+      "localOnly": "Locaux uniquement",
+      "allRoles": "Tous les rôles",
+      "admin": "Admin",
+      "nonAdmin": "Non-admin",
+      "joinedAfter": "Inscrits après le",
+      "joinedBefore": "Inscrits avant le",
+      "newest": "Plus récents d'abord",
+      "oldest": "Plus anciens d'abord",
+      "nameDesc": "Nom Z-A",
+      "deleted": "Supprimés",
+      "clear": "Effacer les filtres"
+    },
+    "badge": {
+      "admin": "Admin",
+      "deleted": "Supprimé"
+    },
+    "actions": {
+      "demote": "Retirer le rôle d'administrateur",
+      "promote": "Promouvoir administrateur",
+      "federatedNoAdmin": "Les utilisateurs fédérés ne peuvent pas être administrateurs",
+      "resetPassword": "Réinitialiser le mot de passe",
+      "federatedNoReset": "Les utilisateurs fédérés s'authentifient via leur instance d'origine",
+      "delete": "Supprimer l'utilisateur",
+      "selfDelete": "Utilisez les paramètres du compte pour supprimer votre propre compte"
+    },
+    "tempPassword": {
+      "label": "Mot de passe temporaire :",
+      "note": "Affiché une seule fois. L'utilisateur a été déconnecté et doit se reconnecter."
+    },
+    "pagination": "Page {{page}} sur {{total}} ({{users}})",
+    "count_one": "{{count}} utilisateur",
+    "count_many": "{{count}} d'utilisateurs",
+    "count_other": "{{count}} utilisateurs",
+    "roleFailed": "Impossible de mettre à jour le rôle",
+    "resetFailed": "Impossible de réinitialiser le mot de passe",
+    "actionFailed": "Échec de l'action",
+    "resetDialog": {
+      "title": "Réinitialiser le mot de passe",
+      "description": "Réinitialiser le mot de passe de <strong>{{username}}</strong> ? Cette personne sera déconnectée immédiatement et devra se reconnecter avec le nouveau mot de passe temporaire.",
+      "confirm": "Réinitialiser le mot de passe"
+    },
+    "demoteDialog": {
+      "title": "Retirer le rôle d'administrateur",
+      "description": "Retirer les privilèges d'administrateur de <strong>{{username}}</strong> ? Cette personne perdra l'accès aux paramètres de l'instance.",
+      "confirm": "Retirer"
+    },
+    "deleteDialog": {
+      "title": "Supprimer l'utilisateur",
+      "description": "Supprimer définitivement <strong>{{username}}</strong> ? Cela le retirera de tous les espaces, MP et listes d'amis. Cette action est irréversible.",
+      "confirm": "Supprimer l'utilisateur"
+    }
+  },
+  "mobile": {
+    "title": "Instance",
+    "sections": {
+      "general": "Général",
+      "registration": "Inscription",
+      "federation": "Fédération",
+      "streaming": "Streaming",
+      "storage": "Stockage",
+      "updates": "Mises à jour",
+      "users": "Utilisateurs",
+      "telemetry": "Dire bonjour"
+    }
+  }
+}

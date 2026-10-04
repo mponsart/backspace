@@ -11,7 +11,7 @@ describe('LazyCatalogBackend', () => {
 
   it('rejects a language that is not shipped', async () => {
     const backend = new LazyCatalogBackend();
-    await expect(backend.read('fr', 'common')).rejects.toThrow(/fr\/common/);
+    await expect(backend.read('es', 'common')).rejects.toThrow(/es\/common/);
   });
 
   it('rejects a namespace that does not exist', async () => {
@@ -27,7 +27,7 @@ describe('LazyCatalogBackend', () => {
 describe('listCatalogPaths', () => {
   it('sees every lazily loaded language, and not bundled English', () => {
     const languages = new Set(listCatalogPaths().map((p) => p.language));
-    expect([...languages].sort()).toEqual(['de', 'ru', 'zh']);
+    expect([...languages].sort()).toEqual(['de', 'fr', 'ru', 'zh']);
   });
 
   it('sees the same namespaces for every language', () => {

@@ -6,7 +6,7 @@ moves. This spec is the contract; the foundation PR implements it and each
 surface sweep PR extends it.
 
 Shipped languages: English (`en`, the source language and the fallback),
-Russian (`ru`), German (`de`), Simplified Chinese (`zh`). Adding a language is a
+Russian (`ru`), German (`de`), French (`fr`), Simplified Chinese (`zh`). Adding a language is a
 catalog directory plus one entry in `supportedLanguages`; nothing else in the
 code should need to know the list.
 
@@ -129,6 +129,7 @@ keep in step; for the shipped languages that is:
 | en | `_one`, `_other` |
 | de | `_one`, `_other` |
 | ru | `_one`, `_few`, `_many`, `_other` |
+| fr | `_one`, `_many`, `_other` |
 | zh | `_other` |
 
 A catalog directory whose code `Intl` does not know is a finding of its own,
@@ -255,7 +256,7 @@ language keeps following their browser; only the picker persists.
 
 The selector lives in the user settings modal, Account panel, section
 "Language". It lists `supportedLanguages`, showing each language by its
-`nativeName` (English, Русский, Deutsch, 简体中文); the list is not translated,
+`nativeName` (English, Русский, Deutsch, Français, 简体中文); the list is not translated,
 because a user who cannot read the current language needs to find their own.
 
 Changing the language:
@@ -417,7 +418,7 @@ The main process shows a handful of strings outside the renderer: tray menu
 items, the application menu (macOS, and the accelerator-only Edit menu on
 Windows and Linux), the update items, the recovery page and the instance
 picker. The menu strings live in `packages/desktop/src/l10n.ts` as a small
-typed catalog with `en`, `ru`, `de` and `zh` entries; `translateDesktop(language,
+typed catalog with `en`, `ru`, `de`, `fr` and `zh` entries; `translateDesktop(language,
 key, values?)` reads it. The recovery and instance-picker pages carry their
 own inline `STRINGS` tables, because they are shown precisely when the
 renderer is unavailable.

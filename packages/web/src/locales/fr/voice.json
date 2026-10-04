@@ -1,0 +1,258 @@
+{
+  "chatPanel": {
+    "title": "Chat",
+    "close": "Fermer le chat"
+  },
+  "badges": {
+    "mutedNoPermission": "Muet (pas la permission de parler)",
+    "spaceMuted": "Mis en sourdine par l'espace",
+    "mutedSpaceDeafened": "Muet (mis en sourdine totale par l'espace)",
+    "spaceDeafened": "Mis en sourdine totale par l'espace",
+    "locallyMuted": "Mis en sourdine localement",
+    "live": "LIVE",
+    "you": "(vous)"
+  },
+  "moderation": {
+    "spaceMute": "Couper le micro dans l'espace",
+    "spaceUnmute": "Rétablir le micro dans l'espace",
+    "spaceDeafen": "Couper le son dans l'espace",
+    "spaceUndeafen": "Rétablir le son dans l'espace",
+    "disconnect": "Déconnecter",
+    "moveTo": "Déplacer vers"
+  },
+  "participantMenu": {
+    "watchCamera": "Regarder la caméra",
+    "stopWatchingCamera": "Ne plus regarder la caméra",
+    "muteUser": "Rendre muet",
+    "userVolume": "Volume de l'utilisateur"
+  },
+  "incomingCall": {
+    "status": "Appel vocal entrant…",
+    "notificationTitle": "Appel entrant",
+    "notificationBody": "{{name}} vous appelle"
+  },
+  "grid": {
+    "waitingForOthers": "En attente que d'autres personnes rejoignent…",
+    "returnToGridHint": "Cliquez pour revenir à la vue en grille",
+    "backToGrid": "Retour à la vue en grille",
+    "gridButton": "Grille",
+    "showMembers": "Afficher les membres",
+    "hideMembers": "Masquer les membres"
+  },
+  "connectionInfo": {
+    "title": "Infos de connexion",
+    "notConnected": "Non connecté",
+    "gathering": "Collecte des statistiques…",
+    "section": {
+      "network": "Réseau",
+      "audio": "Audio",
+      "video": "Vidéo"
+    },
+    "network": {
+      "ping": "Ping",
+      "packetLoss": "Perte de paquets",
+      "jitter": "Gigue",
+      "server": "Serveur",
+      "protocol": "Protocole"
+    },
+    "video": {
+      "requestedCodec": "Codec demandé",
+      "negotiatedCodec": "Codec négocié",
+      "encoderImplementation": "Implémentation de l'encodeur",
+      "qpDelta": "Variation de la somme QP",
+      "nackDelta": "Variation des NACK",
+      "pliDelta": "Variation des PLI"
+    },
+    "source": {
+      "microphone": "Microphone",
+      "camera": "Caméra",
+      "screen": "Écran",
+      "screenAudio": "Audio de l'écran",
+      "unknown": "Inconnu"
+    },
+    "remoteParticipant": "Distant"
+  },
+  "screenPicker": {
+    "title": "Partager votre écran",
+    "tabs": {
+      "screens": "Écrans",
+      "windows": "Fenêtres"
+    },
+    "searchWindows": "Rechercher des fenêtres…",
+    "noWindowsMatch": "Aucune fenêtre ne correspond à votre recherche",
+    "noScreens": "Aucun écran disponible",
+    "noWindows": "Aucune fenêtre disponible",
+    "loadingSources": "Recherche des écrans et des fenêtres…",
+    "chooseTitle": "Choisissez ce que vous partagez",
+    "chooseHint": "Votre navigateur vous demandera quel écran, quelle fenêtre ou quel onglet partager.",
+    "chooseHintSystem": "Votre système vous demandera quel écran ou quelle fenêtre partager.",
+    "choose": "Choisir",
+    "chooseAgain": "Choisir autre chose",
+    "preview": "Aperçu",
+    "audioNeedsRepick": "Le réglage de l'audio système s'applique une fois que vous avez fait un nouveau choix.",
+    "cancelled": "Rien n'a été choisi.",
+    "unsupported": "Ce navigateur ne peut pas partager votre écran.",
+    "captureFailed": "Impossible de démarrer la capture.",
+    "startFailed": "Impossible de démarrer le stream.",
+    "audioCaptureFailed": "Impossible de démarrer la capture avec l'audio système. Désactivez l'audio système si votre système ne le prend pas en charge.",
+    "start": "Démarrer le stream",
+    "subtitle": "Choisissez ce que vous partagez, réglez la qualité, puis démarrez.",
+    "stageIdle": "Rien n'est sélectionné pour l'instant",
+    "stageReady": "Prêt à passer en direct",
+    "permissionHintMac": "macOS bloque la capture d'écran tant que Backspace n'a pas l'autorisation d'enregistrement de l'écran. Accordez-la dans Réglages Système → Confidentialité et sécurité → Enregistrement de l'écran, puis réessayez.",
+    "retrySources": "Réessayer",
+    "kind": {
+      "monitor": "Écran",
+      "window": "Fenêtre"
+    }
+  },
+  "streamSettings": {
+    "title": "Paramètres du stream",
+    "hostLimits": "Limites définies par {{host}}",
+    "resolution": "Résolution",
+    "frameRate": "Fréquence d'images",
+    "contentMode": "Mode de contenu",
+    "mode": {
+      "gaming": "Jeu",
+      "text": "Texte"
+    },
+    "codec": "Codec",
+    "codecOption": {
+      "vp9": "VP9",
+      "h264": "H264"
+    },
+    "bitrate": "Débit",
+    "custom": "Personnalisé",
+    "auto": "Auto",
+    "customBitrateDisabled": "Débit personnalisé désactivé par l'administrateur",
+    "customBitrateDisabledByHost": "Débit personnalisé désactivé par {{host}}",
+    "systemAudio": "Audio système",
+    "chromeEchoNote": "Chrome peut exclure l'audio de Backspace lorsque le type de capture le permet",
+    "electronWindowsAudioNote": "La capture loopback de Windows peut inclure l'audio de l'appel lorsque restrictOwnAudio n'est pas pris en charge",
+    "electronMacAudioNote": "macOS 13 et versions ultérieures exige l'autorisation d'enregistrement de l'écran et de l'audio système",
+    "electronLinuxAudioNote": "Linux nécessite la compatibilité PulseAudio ; l'audio de Backspace peut aussi être capturé",
+    "systemAudioStartFailed": "Impossible de démarrer le stream avec l'audio système. Désactivez le partage de l'audio système si cette plateforme ne le prend pas en charge.",
+    "systemAudioAddFailed": "Impossible d'ajouter l'audio système au stream.",
+    "systemAudioAdding": "Ajout de l'audio système…",
+    "systemAudioLiveUnavailable": "L'audio système ne peut être ajouté qu'au démarrage d'un stream. Relancez le stream pour l'inclure.",
+    "softwareH264Fallback": "L'encodage H264 matériel n'est pas disponible. OpenH264 logiciel est utilisé ; VP9 peut donner de meilleurs résultats.",
+    "degradation": {
+      "maintainResolution": "garder la résolution",
+      "maintainFramerate": "garder la fréquence d'images",
+      "balanced": "équilibré"
+    },
+    "summary": "{{bitrate}} · {{degradation}}"
+  },
+  "stream": {
+    "quality": "Qualité du stream",
+    "qualityValue": "{{height}}p {{fps}} i/s",
+    "volume": "Volume du stream",
+    "attenuation": "Atténuation du stream",
+    "attenuationStrength": "Intensité de l'atténuation",
+    "stop": "Arrêter le stream",
+    "change": "Changer de stream",
+    "stopWatching": "Arrêter de regarder",
+    "watch": "Regarder le stream",
+    "watchShort": "Regarder",
+    "mute": "Couper le son du stream",
+    "isStreaming": "{{name}} est en stream"
+  },
+  "streamDiagnostics": {
+    "publisherNetwork": "Le réseau de la personne qui diffuse est instable",
+    "publisherCpu": "L'ordinateur de la personne qui diffuse n'encode pas la vidéo assez vite",
+    "viewerNetwork": "Votre connexion est instable",
+    "reconnecting": "Connexion perdue — reconnexion…",
+    "unknown": "La connexion est instable ; impossible de déterminer de quel côté vient le problème"
+  },
+  "voiceDiagnostics": {
+    "selfNetwork": "Votre connexion est instable",
+    "participantNetwork": "La connexion de {{name}} est instable",
+    "reconnecting": "La connexion au serveur vocal a été interrompue — reconnexion…"
+  },
+  "channelDuration": "Salon actif depuis {{duration}}",
+  "controls": {
+    "spaceMutedSelfMuted": "Micro coupé par l'espace (et par vous)",
+    "unmuteShortcut": "Réactiver le micro (M)",
+    "muteShortcut": "Couper le micro (M)",
+    "undeafenShortcut": "Réactiver le son (D)",
+    "deafenShortcut": "Couper le son (D)",
+    "unmute": "Réactiver le micro",
+    "mute": "Couper le micro",
+    "undeafen": "Réactiver le son",
+    "deafen": "Couper le son",
+    "cameraOff": "Désactiver la caméra",
+    "cameraOn": "Activer la caméra",
+    "stopSharing": "Arrêter le partage",
+    "shareScreen": "Partager l'écran",
+    "shareOptions": "Options de partage d'écran",
+    "toggleChat": "Afficher/masquer le chat",
+    "exitFullscreen": "Quitter le plein écran (Échap)",
+    "fullscreen": "Plein écran",
+    "disconnect": "Se déconnecter",
+    "connectionInfo": "Infos de connexion",
+    "noiseSuppressionOff": "Désactiver la suppression de bruit par IA",
+    "noiseSuppressionOn": "Activer la suppression de bruit par IA"
+  },
+  "status": {
+    "dmCall": "Appel privé",
+    "voiceChannel": "Salon vocal",
+    "voiceCall": "Appel vocal",
+    "connectionFailed": "Échec de la connexion",
+    "connected": "Connecté en vocal",
+    "connecting": "Connexion…",
+    "reconnecting": "Reconnexion…",
+    "disconnected": "Déconnecté",
+    "connectionLost": "Connexion perdue. Réessayez.",
+    "retry": "Réessayer"
+  },
+  "camera": {
+    "auto": "Auto",
+    "autoSystemDefault": "Auto (par défaut du système)",
+    "selected": "Caméra sélectionnée",
+    "fallbackName": "Caméra {{index}}",
+    "select": "Sélectionner la caméra",
+    "switch": "Changer de caméra",
+    "turnOn": "Activer la caméra",
+    "turnOff": "Désactiver la caméra"
+  },
+  "joinSheet": {
+    "peopleInVoice_one": "{{count}} personne en vocal",
+    "peopleInVoice_many": "{{count}} de personnes en vocal",
+    "peopleInVoice_other": "{{count}} personnes en vocal",
+    "switchNotice": "Vous quitterez <current>{{current}}</current> et rejoindrez <target>{{target}}</target>",
+    "checkingCamera": "Vérification de la caméra…",
+    "tapToPreview": "Touchez pour prévisualiser la caméra",
+    "cameraDenied": "Autorisation d'accès à la caméra refusée.",
+    "stopPreview": "Arrêter l'aperçu",
+    "enablePreview": "Activer l'aperçu de la caméra",
+    "previewError": {
+      "inUse": "La caméra est utilisée par une autre application.",
+      "unavailable": "La caméra sélectionnée n'est pas disponible.",
+      "notFound": "Aucune caméra détectée.",
+      "failed": "Impossible de démarrer l'aperçu de la caméra."
+    },
+    "empty": {
+      "title": "Personne n'est encore dans ce salon.",
+      "hint": "Soyez le premier à rejoindre !"
+    },
+    "unmuteMicrophone": "Réactiver le microphone",
+    "muteMicrophone": "Couper le microphone",
+    "switchChannel": "Changer de salon",
+    "join": "Rejoindre le vocal"
+  },
+  "mobileCall": {
+    "collapse": "Réduire l'appel",
+    "connectedCount_one": "{{count}} connecté",
+    "connectedCount_many": "{{count}} de connectés",
+    "connectedCount_other": "{{count}} connectés",
+    "viewMembers": "Voir les membres",
+    "micDenied": {
+      "title": "Accès au microphone refusé",
+      "description": "Vous êtes en écoute seule — les autres ne peuvent pas vous entendre.",
+      "allow": "Autoriser le microphone"
+    },
+    "shareScreen": "Partager l'écran",
+    "stopSharingScreen": "Arrêter le partage d'écran",
+    "disconnect": "Quitter l'appel"
+  }
+}

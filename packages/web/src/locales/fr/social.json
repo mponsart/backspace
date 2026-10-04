@@ -1,0 +1,86 @@
+{
+  "tabs": {
+    "all": "Tous",
+    "pending": "En attente",
+    "add": "Ajouter un ami",
+    "activity": "Activité"
+  },
+  "sections": {
+    "online": "En ligne — {{n}}",
+    "all": "Tous les amis — {{n}}",
+    "pending": "En attente — {{n}}",
+    "active": "Actifs — {{n}}",
+    "offline": "Hors ligne — {{n}}"
+  },
+  "empty": {
+    "online": "Personne n'est en ligne pour le moment.",
+    "all": "Pas encore d'amis — ajoutez quelqu'un !",
+    "pending": "Aucune demande en attente — Nori fait la sieste.",
+    "activity": "C'est calme pour l'instant… Quand vos amis commenceront une activité, elle s'affichera ici !"
+  },
+  "friend": {
+    "viaInstance": "via {{host}}",
+    "message": "Message",
+    "remove": "Retirer des amis"
+  },
+  "sendMessage": {
+    "failed": "Impossible d'ouvrir la conversation : {{reason}}"
+  },
+  "request": {
+    "incoming": "Demande d'ami reçue",
+    "outgoing": "Demande d'ami envoyée",
+    "ignore": "Ignorer",
+    "cancel": "Annuler la demande",
+    "send": "Envoyer une demande d'ami",
+    "pending": "Demande en attente",
+    "sending": "Envoi…",
+    "cancelling": "Annulation…",
+    "sent": "Demande d'ami envoyée !"
+  },
+  "removeFriend": {
+    "title": "Retirer des amis",
+    "description": "Voulez-vous vraiment retirer {{name}} de vos amis ? Vous pourrez toujours lui envoyer une nouvelle demande d'ami plus tard.",
+    "fallbackName": "cet utilisateur"
+  },
+  "add": {
+    "title": "Trouver des personnes",
+    "hint": "Recherchez par nom d'utilisateur ou utilisez <handle>utilisateur@instance</handle> pour ajouter quelqu'un directement.",
+    "placeholder": "Rechercher ou ajouter par nom d'utilisateur…",
+    "direct": "Envoyer une demande d'ami à <handle>{{handle}}</handle>",
+    "sendRequest": "Envoyer la demande",
+    "discover": "Découvrir des personnes",
+    "noSearchResults": "Aucun utilisateur ne correspond à votre recherche.",
+    "noDiscoverable": "Aucun utilisateur à découvrir pour l'instant — invitez des personnes à vous rejoindre !"
+  },
+  "mutuals": {
+    "friends_one": "{{count}} ami en commun",
+    "friends_many": "{{count}} d'amis en commun",
+    "friends_other": "{{count}} amis en commun",
+    "spaces_one": "{{count}} espace en commun",
+    "spaces_many": "{{count}} d'espaces en commun",
+    "spaces_other": "{{count}} espaces en commun",
+    "noFriends": "Aucun ami en commun",
+    "noSpaces": "Aucun espace en commun"
+  },
+  "profile": {
+    "tabs": {
+      "about": "À propos",
+      "mutualFriends": "Amis en commun",
+      "mutualSpaces": "Espaces en commun"
+    },
+    "aboutMe": "À propos de moi",
+    "roles": "Rôles",
+    "memberSince": "Membre depuis",
+    "sendMessage": "Envoyer un message",
+    "editRoles": "Modifier les rôles",
+    "viewFull": "Voir le profil complet",
+    "addFriend": "Ajouter en ami"
+  },
+  "activity": {
+    "title": "Actifs en ce moment",
+    "quietTitle": "C'est calme pour l'instant…",
+    "quietDescription": "Quand un ami commence une activité — comme jouer à un jeu ou discuter en vocal — elle s'affichera ici !",
+    "online": "En ligne — {{n}}",
+    "offline": "Hors ligne — {{n}}"
+  }
+}
