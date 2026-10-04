@@ -92,7 +92,7 @@ const knownInstanceOrigins = new Set<string>();
 // ─── AGPL-3.0 § 13 source offer ─────────────────────────────────────────────
 // Upstream fallback for the "Source code" menu items and the About panel.
 // Used when the connected instance can't be reached or advertises no source URL.
-const UPSTREAM_SOURCE_URL = 'https://github.com/TheZwiss/backspace';
+const UPSTREAM_SOURCE_URL = 'https://github.com/mponsart/backspace';
 
 /**
  * Resolve the Corresponding Source URL for the instance the desktop app is

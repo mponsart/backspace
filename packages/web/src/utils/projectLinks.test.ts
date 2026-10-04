@@ -8,7 +8,7 @@ import {
   type ProjectLinks,
 } from './projectLinks';
 
-const REPO = 'https://github.com/TheZwiss/backspace';
+const REPO = 'https://github.com/mponsart/backspace';
 
 /** A well-formed set with both optional targets filled, for the validator's sample cases. */
 function filled(over: Partial<ProjectLinks> = {}): ProjectLinks {

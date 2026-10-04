@@ -26,7 +26,7 @@ export interface PayloadContext {
 
 // Kept in step with config.ts: an instance whose AGPL section 13 source offer
 // points anywhere else is running a fork, and reports itself as modified.
-const UPSTREAM_SOURCE_URL = 'https://github.com/TheZwiss/backspace';
+const UPSTREAM_SOURCE_URL = 'https://github.com/mponsart/backspace';
 
 export function payloadContextFromConfig(
   cfg: typeof serverConfig,

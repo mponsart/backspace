@@ -32,7 +32,7 @@ function stubRelease(tag: string): void {
     new Response(
       JSON.stringify({
         tag_name: tag,
-        html_url: `https://github.com/TheZwiss/backspace/releases/tag/${tag}`,
+        html_url: `https://github.com/mponsart/backspace/releases/tag/${tag}`,
         published_at: '2026-09-03T11:00:00Z',
       }),
       { status: 200, headers: { 'content-type': 'application/json' } },
@@ -85,7 +85,7 @@ describe('GET /api/admin/instance/update-status', () => {
       current: { version: config.version, commit: config.commit },
       latest: {
         version: '99.0.0',
-        url: 'https://github.com/TheZwiss/backspace/releases/tag/v99.0.0',
+        url: 'https://github.com/mponsart/backspace/releases/tag/v99.0.0',
         publishedAt: '2026-09-03T11:00:00Z',
       },
       state: 'update-available',

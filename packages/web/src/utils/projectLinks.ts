@@ -37,7 +37,7 @@ export interface ProjectLinks {
   community: CommunityTarget | null;
 }
 
-const REPOSITORY = 'https://github.com/TheZwiss/backspace';
+const REPOSITORY = 'https://github.com/mponsart/backspace';
 
 export const PROJECT_LINKS: ProjectLinks = {
   repository: REPOSITORY,

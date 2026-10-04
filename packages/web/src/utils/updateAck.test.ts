@@ -29,7 +29,7 @@ function makeStorage(seed: Record<string, string> = {}, throwing = false) {
 function status(over: Partial<InstanceUpdateStatus> = {}): InstanceUpdateStatus {
   return {
     current: { version: '1.2.1', commit: 'abc1234' },
-    latest: { version: '1.3.0', url: 'https://github.com/TheZwiss/backspace/releases/tag/v1.3.0', publishedAt: '2026-09-08T00:00:00Z' },
+    latest: { version: '1.3.0', url: 'https://github.com/mponsart/backspace/releases/tag/v1.3.0', publishedAt: '2026-09-08T00:00:00Z' },
     state: 'update-available',
     checkedAt: 1_757_000_000_000,
     checkEnabled: true,
